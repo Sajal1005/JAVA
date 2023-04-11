@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the GitHub repository URL and branch name
-REPO_URL="ssh://git@github.com/Sajal1005/JAVA.git"
+REPO_URL="https://github.com/Sajal1005/JAVA.git"
 BRANCH_NAME="main"
 
 # Change directory to the folder that you want to push changes from
@@ -14,7 +14,7 @@ git add .
 git commit -m "Auto-commit at $(date "+%Y-%m-%d %H:%M:%S")"
 
 # Push the changes to the GitHub repository
-git push $REPO_URL $BRANCH_NAME
+printf 'Sajal1005\n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\n' | git push $REPO_URL $BRANCH_NAME
 
 
 # Print a message to indicate that the push was successful
