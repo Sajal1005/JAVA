@@ -16,7 +16,7 @@ git add .
 git commit -m "Auto-commit at $(date "+%Y-%m-%d %H:%M:%S")"
 
 # Push the changes to the GitHub repository
-git push $REPO_URL $BRANCH_NAME --quiet --force --set-upstream "https://$USERNAME:$TOKEN@github.com/yourusername/repo.git"
+git push $REPO_URL $BRANCH_NAME --quiet --force --set-upstream "https://$TOKEN@github.com/yourusername/repo.git"
 
 
 # Print a message to indicate that the push was successful
