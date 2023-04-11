@@ -1,4 +1,5 @@
 #!/bin/bash
+#!/usr/bin/expect
 
 # Set the GitHub repository URL and branch name
 REPO_URL="https://github.com/Sajal1005/JAVA.git"
