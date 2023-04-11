@@ -15,6 +15,8 @@ git commit -m "Auto-commit at $(date "+%Y-%m-%d %H:%M:%S")"
 
 # Push the changes to the GitHub repository
 git push $REPO_URL $BRANCH_NAME
+send "Sajal1005"
+send "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"
 printf 'Sajal1005\n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\n'
 
 
