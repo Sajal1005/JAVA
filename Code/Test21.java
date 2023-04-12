@@ -7,7 +7,11 @@ public class Test21{
     }
     
     public static void main(String args[]){
-        int sum = sumnum(5,6);
-        System.out.println(sum);
+        int a=50;
+        {
+            a=20;
+            System.out.println(a);
+        }
+        System.out.println(a);
     }
 }
