@@ -495,12 +495,34 @@ public class Patterns {
 //        C D E
 //        B C D E
 //        A B C D E
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<i+1;j++){
+//                char c = (char) ((n-i+j)+64);
+//                System.out.print(c+" ");
+//            }
+//            System.out.println();
+//        }
+
+//        33.
+//        a
+//        B c
+//        D e F
+//        g H i J
+//        k L m N o
+        char c='a';
         for(int i=0;i<n;i++){
             for(int j=0;j<i+1;j++){
-                char c = (char) ((n-i+j)+64);
-                System.out.print(c);
+                if((i+j)%2==0){
+                    System.out.print(c+" ");
+                }else{
+                    c-=32;
+                    System.out.print(c+" ");
+                    c+=32;
+                }
+                c++;
             }
             System.out.println();
         }
+
     }
 }
