@@ -399,16 +399,74 @@ public class Patterns {
 //            System.out.println();
 //        }
 
+//        22.
+//        1
+//        0 1
+//        1 0 1
+//        0 1 0 1
+//        1 0 1 0 1
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<i+1;j++){
+//                if((i+j)%2==0){
+//                    System.out.print(1+" ");
+//                }else{
+//                    System.out.print(0+" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+//        24.
+//       *        *
+//       **      **
+//       * *    * *
+//       *  *  *  *
+//       *   **   *
+//       *   **   *
+//       *  *  *  *
+//       * *    * *
+//       **      **
+//       *        *
         for(int i=0;i<n;i++){
             for(int j=0;j<i+1;j++){
-                if((i+j)%2==0){
-                    System.out.print(1+" ");
+                if(i==0 || j==0 || j==i){
+                    System.out.print("*");
                 }else{
-                    System.out.print(0+" ");
+                    System.out.print(" ");
+                }
+            }
+            for(int j=0;j<(2*n)-2-(2*i);j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<i+1;j++){
+                if(i==0 || j==0 || j==i){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
                 }
             }
             System.out.println();
         }
-
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                if(i==n-1 || j==0 || j==n-i-1){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            for(int j=0;j<2*i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                if(i==n-1 || j==0 || j==n-i-1){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
