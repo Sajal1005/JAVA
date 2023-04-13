@@ -530,13 +530,29 @@ public class Patterns {
 //        C B A
 //        B A
 //        A
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n-i;j++){
-                char c = (char) ((n-i-j)+64);
-                System.out.print(c+" ");
-            }
-            System.out.println();
-        }
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<n-i;j++){
+//                char c = (char) ((n-i-j)+64);
+//                System.out.print(c+" ");
+//            }
+//            System.out.println();
+//        }
+
+//        4 4 4 4 4 4 4
+//        4 3 3 3 3 3 4
+//        4 3 2 2 2 3 4
+//        4 3 2 1 2 3 4
+//        4 3 2 2 2 3 4
+//        4 3 3 3 3 3 4
+//        4 4 4 4 4 4 4
+//        for(int i=0;i<(2*n)-1;i++){
+//            for(int j=0;j<(2*n-1);j++){
+//                int left =i,right=j,top=(2*n-2-j),down=(2*n-2-i);
+//                int ans = Math.min(Math.min(left,right),Math.min(top,down));
+//                System.out.print(n-ans);
+//            }
+//            System.out.println();
+//        }
 
     }
 }
