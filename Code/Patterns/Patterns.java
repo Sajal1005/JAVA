@@ -428,45 +428,54 @@ public class Patterns {
 //       * *    * *
 //       **      **
 //       *        *
-        for(int i=0;i<n;i++){
-            for(int j=0;j<i+1;j++){
-                if(i==0 || j==0 || j==i){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            for(int j=0;j<(2*n)-2-(2*i);j++){
-                System.out.print(" ");
-            }
-            for(int j=0;j<i+1;j++){
-                if(i==0 || j==0 || j==i){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n-i;j++){
-                if(i==n-1 || j==0 || j==n-i-1){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            for(int j=0;j<2*i;j++){
-                System.out.print(" ");
-            }
-            for(int j=0;j<n-i;j++){
-                if(i==n-1 || j==0 || j==n-i-1){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<i+1;j++){
+//                if(i==0 || j==0 || j==i){
+//                    System.out.print("*");
+//                }else{
+//                    System.out.print(" ");
+//                }
+//            }
+//            for(int j=0;j<(2*n)-2-(2*i);j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=0;j<i+1;j++){
+//                if(i==0 || j==0 || j==i){
+//                    System.out.print("*");
+//                }else{
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<n-i;j++){
+//                if(i==n-1 || j==0 || j==n-i-1){
+//                    System.out.print("*");
+//                }else{
+//                    System.out.print(" ");
+//                }
+//            }
+//            for(int j=0;j<2*i;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=0;j<n-i;j++){
+//                if(i==n-1 || j==0 || j==n-i-1){
+//                    System.out.print("*");
+//                }else{
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+//        25.
+//          *****
+//         *   *
+//        *   *
+//       *   *
+//      *****
+
+        
     }
 }
