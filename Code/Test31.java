@@ -20,12 +20,28 @@ class Test31{
 //            }
 //            System.out.println();
 //        }
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<n-i-1;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=0;j<(i+1);j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        double ans=0;
+//        for(int i=1;i<=n;i++){
+//
+//            ans+=((double)(1.0/i));
+//        }
+//        System.out.printf("%,.6f",ans);
+
         for(int i=0;i<n;i++){
-            for(int j=0;j<n-i;j++){
+            for(int j=0;j<n-i-1;j++){
                 System.out.print(" ");
             }
             for(int j=0;j<(2*i+1);j++){
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println();
         }
