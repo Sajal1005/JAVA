@@ -3,7 +3,7 @@ import java.util.*;
 class Test31{
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+//        int n = in.nextInt();
 //        for(int i=1;i<=10;i++){
 //            System.out.println(n+" X "+i+" = "+(n*i));
 //        }
@@ -107,14 +107,20 @@ class Test31{
 //            n/=10;
 //        }
 //        System.out.print(ans);
-        ArrayList<Integer> arr = new ArrayList<>();
-        while(n!=0){
-            int r=n%2;
-            arr.add(r);
-            n/=2;
-        }
-        for(int i=arr.size()-1;i>=0;i--){
-            System.out.print(arr.get(i));
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        while(n!=0){
+//            int r=n%2;
+//            arr.add(r);
+//            n/=2;
+//        }
+//        for(int i=arr.size()-1;i>=0;i--){
+//            System.out.print(arr.get(i));
+//        }
+        int n=in.nextInt();
+        in.nextLine();
+        String s= in.nextLine();
+        for(int i=s.length()-1;i>=0;i--){
+            System.out.print(s.charAt(i));
         }
     }
 }
