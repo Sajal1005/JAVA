@@ -116,11 +116,12 @@ class Test31{
 //        for(int i=arr.size()-1;i>=0;i--){
 //            System.out.print(arr.get(i));
 //        }
-        int n=in.nextInt();
-        in.nextLine();
-        String s= in.nextLine();
-        for(int i=s.length()-1;i>=0;i--){
-            System.out.print(s.charAt(i));
-        }
+//        int n=in.nextInt();
+//        in.nextLine();
+//        String s= in.nextLine();
+//        for(int i=s.length()-1;i>=0;i--){
+//            System.out.print(s.charAt(i));
+//        }
+
     }
 }
