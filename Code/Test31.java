@@ -52,21 +52,39 @@ class Test31{
 //            k+=9;
 //        }
 //        System.out.println(ans);
-        int num=n,count=0,ans=0;
-        while(n!=0){
-            count++;
-            n/=10;
+//        int num=n,count=0,ans=0;
+//        while(n!=0){
+//            count++;
+//            n/=10;
+//        }
+//        n=num;
+//        while(n!=0){
+//            int r=n%10;
+//            ans+=(Math.pow(r,count));
+//            n/=10;
+//        }
+//        if(ans==num){
+//            System.out.println("Yes");
+//        }else{
+//            System.out.println("Np");
+//        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i-1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<(2*i+1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        n=num;
-        while(n!=0){
-            int r=n%10;
-            ans+=(Math.pow(r,count));
-            n/=10;
-        }
-        if(ans==num){
-            System.out.println("Yes");
-        }else{
-            System.out.println("Np");
+        for(int i=0;i<n-1;i++){
+            for(int j=0;j<i+1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<(2*n-3-(2*i));j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
