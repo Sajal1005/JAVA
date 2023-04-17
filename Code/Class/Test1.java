@@ -2,7 +2,7 @@ package Class;
 
 public class Test1 {
 
-    class Student{
+    static class Student{
         int age;
         int rollno;
         String name;
@@ -16,5 +16,6 @@ public class Test1 {
 
     public static void main(String[] args) {
         Student sajal = new Student(19,1232,"Sajal");
+        System.out.println(sajal.name);
     }
 }
