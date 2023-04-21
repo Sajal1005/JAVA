@@ -8,7 +8,7 @@ class Animal{
 }
 class Dog extends Animal{
     String name = "Dog";
-    void details(){
+    protected void details(){
         System.out.println(name);
     }
     public static void main(String[] args) {
