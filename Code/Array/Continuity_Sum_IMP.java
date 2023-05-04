@@ -1,8 +1,16 @@
-import java.util.*;
+package Array;
+
+import java.util.Scanner;
 
 // 5 1 2 3 8 10 11 12 14
-class Test31{
-    public static void main(String args[]){
+//Add only continuity sum like 1 2 3....then break at 8 .....then again sum 10 11 12
+
+//6
+//1 2 3 5 7 8
+//21 ans
+
+public class Continuity_Sum_IMP {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int arr[] = new int[n];

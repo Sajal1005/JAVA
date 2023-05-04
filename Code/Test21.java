@@ -7,11 +7,20 @@ public class Test21{
     }
     
     public static void main(String args[]){
-        int a=50;
-        {
-            a=20;
-            System.out.println(a);
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        ArrayList<Integer> arr  = new ArrayList<>(n);
+        for(int i=0;i<n;i++){
+            arr.add(in.nextInt());
         }
-        System.out.println(a);
+        for(int i=1;i<arr.size();i++){
+            if(arr.get(i)>arr.get(i-1)){
+                arr.remove(i);
+                i--;
+            }
+        }
+        for(int i=0;i< arr.size();i++){
+            System.out.print(arr.get(i)+" ");
+        }
     }
 }
