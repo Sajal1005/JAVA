@@ -1,6 +1,7 @@
+package String;
 import java.util.*;
 
-public class Test30{
+public class SortArrayOfStrings {
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
