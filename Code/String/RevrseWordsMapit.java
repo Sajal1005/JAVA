@@ -20,7 +20,7 @@ public class RevrseWordsMapit {
 //        }
 //        System.out.println(ans);
 
-//            Method 2 => Two pointers
+//            Method 2 => Sliding Window
 //        int i=0,j=0;
 //        while(i<s.length() && j<s.length()){
 //            while(j<s.length()&&s.charAt(j)!=' '){
