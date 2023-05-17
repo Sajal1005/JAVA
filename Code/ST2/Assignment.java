@@ -23,8 +23,15 @@ public class Assignment {
 //            System.out.println(false);
 //        }
 
-        char c1=in.next().charAt(0);
-        char c2 = in.next().charAt(0);
-        System.out.println(s.replace(c1,c2));
+//        char c1=in.next().charAt(0);
+//        char c2 = in.next().charAt(0);
+//        System.out.println(s.replace(c1,c2));
+
+//        Find ALL Substrings
+        for(int i=0;i<s.length();i++){
+            for(int j=i;j<s.length();j++){
+                System.out.println(s.substring(i,j+1));
+            }
+        }
     }
 }
