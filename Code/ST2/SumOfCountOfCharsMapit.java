@@ -1,2 +1,4 @@
-package ST2;public class SumOfCountOfCharsMapit {
+package ST2;
+
+public class SumOfCountOfCharsMapit {
 }
