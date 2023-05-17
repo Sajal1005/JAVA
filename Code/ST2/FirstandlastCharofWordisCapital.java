@@ -1,0 +1,4 @@
+package ST2;
+
+public class FirstandlastCharofWordisCapital {
+}
