@@ -23,6 +23,8 @@ public class Assignment {
 //            System.out.println(false);
 //        }
 
-        
+        char c1=in.next().charAt(0);
+        char c2 = in.next().charAt(0);
+        System.out.println(s.replace(c1,c2));
     }
 }
