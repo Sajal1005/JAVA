@@ -8,7 +8,7 @@ public class Reverse_Words_String {
         String[] str = s.split(" ");
         for(int i=0;i<str.length;i++){
             StringBuffer word = new StringBuffer(str[i]);
-            System.out.println(word.reverse());
+            System.out.print(word.reverse());
         }
     }
 }
