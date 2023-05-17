@@ -21,7 +21,11 @@ public class FirstandlastCharofWordisCapital {
                 if(str.charAt(i+1)>='a' && str.charAt(i+1)<='z'){
                     str.setCharAt(i+1,(char)(str.charAt(i+1)-32));
                 }
+                if(str.charAt(i-1)>='a' && str.charAt(i-1)<='z'){
+                    str.setCharAt(i-1,(char)(str.charAt(i-1)-32));
+                }
             }
         }
+        System.out.println(str);
     }
 }
