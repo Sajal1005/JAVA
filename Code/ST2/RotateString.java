@@ -5,7 +5,7 @@ public class RotateString {
     public static String rotate(String s){
         String ans="";
         ans+=s.charAt(s.length()-1);
-        ans+=(s.substring(1));
+        ans+=(s.substring(0,s.length()-1));
         return ans;
     }
     public static void main(String[] args) {
