@@ -28,10 +28,12 @@ public class Assignment {
 //        System.out.println(s.replace(c1,c2));
 
 //        Find ALL Substrings
-        for(int i=0;i<s.length();i++){
-            for(int j=i;j<s.length();j++){
-                System.out.println(s.substring(i,j+1));
-            }
-        }
+//        for(int i=0;i<s.length();i++){
+//            for(int j=i;j<s.length();j++){
+//                System.out.println(s.substring(i,j+1));
+//            }
+//        }
+
+
     }
 }
