@@ -113,6 +113,39 @@ public class Final {
 //        }
 //        System.out.println(c);
 
-        
+
+//        Count vowels and consonants
+//        int v=0,c=0;
+//        for(int i=0;i<s.length();i++){
+//            if((s.charAt(i)>='a' && s.charAt(i)<='z')||(s.charAt(i)>='A' && s.charAt(i)<='Z')){
+//                if(vowel(s.charAt(i))){
+//                    v++;
+//                }else{
+//                    c++;
+//                }
+//            }
+
+//        Make palindrome
+        char[] chars = s.toCharArray();
+        Arrays.sort(chars);
+        int count=0,flag=0;
+        String s1="",s2="";
+        for(int i=0;i<chars.length;i++){
+            if(i+1<chars.length && chars[i]==chars[i+1]){
+                s1+=chars[i];
+                s2+=chars[i+1];
+                i++;
+            }else{
+                count++;
+                if(count>1){
+                    flag=1;
+                    System.out.println("NA");
+                    break;
+                }else{
+                    s1+=chars[i];
+                }
+            }
+        }
+        System.out.println(s1+" "+s2);
     }
 }
