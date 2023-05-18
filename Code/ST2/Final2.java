@@ -158,19 +158,36 @@ public class Final2 {
 
 
 //        total sale count of the desired N products
-        String s = in.nextLine();
+//        String s = in.nextLine();
+//        int n = in.nextInt();
+//        int sum=0;
+//        for(int i=0;i<n;i++){
+//            char c = in.next().charAt(0);
+//            int count=0;
+//            for(int j=0;j<s.length();j++){
+//                if(c==s.charAt(j)){
+//                    count++;
+//                }
+//            }
+//            sum+=(count*((int)(c)));
+//        }
+//        System.out.println(sum);
+
+
+
         int n = in.nextInt();
-        int sum=0;
-        for(int i=0;i<n;i++){
-            char c = in.next().charAt(0);
-            int count=0;
-            for(int j=0;j<s.length();j++){
-                if(c==s.charAt(j)){
-                    count++;
-                }
-            }
-            sum+=(count*((int)(c)));
+        double area=0,perimeter=0;
+        if(n==1){
+            double l = in.nextDouble();
+            double b = in.nextDouble();
+            area = l*b;
+            perimeter = 2*(l+b);
+        }else{
+            double r = in.nextDouble();
+            area = 3.14*r*r;
+            perimeter=2*3.14*r;
         }
-        System.out.println(sum);
+        System.out.println("Area: "+area);
+        System.out.println("Perimeter: "+perimeter);
     }
 }
