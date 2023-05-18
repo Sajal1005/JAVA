@@ -146,6 +146,8 @@ public class Final {
                 }
             }
         }
-        System.out.println(s1+" "+s2);
+        StringBuffer st = new StringBuffer(s2);
+        st.reverse();
+        System.out.println(s1+st);
     }
 }
