@@ -4,7 +4,7 @@ import java.util.*;
 public class Final {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String s = in.nextLine();
+        String st = in.nextLine();
 
 //        Palindrome
 //        int i=0,j=s.length()-1,flag=1;
@@ -63,6 +63,19 @@ public class Final {
 //        }
 
 
-        
+//        Removing Duplicate Characters from a String
+        StringBuffer s = new StringBuffer(st);
+        for(int i=0;i<s.length();i++){
+            for(int j=i+1;j<s.length();j++){
+                if(s.charAt(i)==s.charAt(j)){
+                    s.setCharAt(j,'#');
+                }
+            }
+        }
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)!='#'){
+                System.out.print(s.charAt(i));
+            }
+        }
     }
 }
