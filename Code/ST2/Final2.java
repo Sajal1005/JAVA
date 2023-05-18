@@ -7,17 +7,21 @@ public class Final2 {
         String s = in.nextLine();
 
 //        First Non Repeating Character
-        for(int i=0;i<s.length();i++){
-            int count=0;
-            for(int j=0;j<s.length();j++){
-                if(s.charAt(i)==s.charAt(j)){
-                    count++;
-                }
-            }
-            if(count==1){
-                System.out.println(s.charAt(i));
-                break;
-            }
-        }
+//        for(int i=0;i<s.length();i++){
+//            int count=0;
+//            for(int j=0;j<s.length();j++){
+//                if(s.charAt(i)==s.charAt(j)){
+//                    count++;
+//                }
+//            }
+//            if(count==1){
+//                System.out.println(s.charAt(i));
+//                break;
+//            }
+//        }
+
+//        Trim Spaces
+        s=s.trim();
+        System.out.println(s);
     }
 }
