@@ -21,7 +21,22 @@ public class Final2 {
 //        }
 
 //        Trim Spaces
-        s=s.trim();
-        System.out.println(s);
+//        s=s.trim();
+//        System.out.println(s);
+
+//        Adjacent pairs remove small
+        int i=0,j=1;
+        while(i<s.length() && j<s.length()){
+            if(s.charAt(i)<s.charAt(j)){
+                System.out.print(s.charAt(j));
+            }else{
+                System.out.print(s.charAt(i));
+            }
+            i+=2;
+            j+=2;
+        }
+        if(s.length()%2!=0){
+            System.out.print(s.charAt(s.length()-1));
+        }
     }
 }
