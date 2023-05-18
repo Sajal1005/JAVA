@@ -94,6 +94,18 @@ public class Final2 {
 //        System.out.println(sum);
 
 
-        
+//      all the characters of the name displayed are same or not
+        char c = s.charAt(0);
+        int flag=1;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)!=c){
+                flag=0;
+            }
+        }
+        if(flag==0){
+            System.out.println("NO");
+        }else{
+            System.out.println("Yes");
+        }
     }
 }
