@@ -52,14 +52,17 @@ public class Final {
 
 
 //        Capitalizing the First Letter of Each Word
-        String[] str = s.split("");
-        for(int i=0;i<str.length;i++){
-            StringBuffer st = new StringBuffer(str[i]);
+//        String[] str = s.split(" ");
+//        for(int i=0;i<str.length;i++){
+//            StringBuffer st = new StringBuffer(str[i]);
 //            st.setCharAt(0,(char)(st.charAt(0)-32));
-            System.out.print(st);
-            if(i!=str.length-1){
-                System.out.print(" ");
-            }
-        }
+//            System.out.print(st);
+//            if(i!=str.length-1){
+//                System.out.print(" ");
+//            }
+//        }
+
+
+        
     }
 }
