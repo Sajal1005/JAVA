@@ -175,22 +175,38 @@ public class Final2 {
 
 
 
-        int n = in.nextInt();
-        double area=0,perimeter=0;
-        if(n==1){
-            double l = in.nextDouble();
-            double b = in.nextDouble();
-            area = l*b;
-            perimeter = 2*(l+b);
-        }else if(n==2){
-            double r = in.nextDouble();
-            area = 3.14*r*r;
-            perimeter=2*3.14*r;
-        }else{
-            System.out.println("Invalid Choice");
+//        int n = in.nextInt();
+//        double area=0,perimeter=0;
+//        if(n==1){
+//            double l = in.nextDouble();
+//            double b = in.nextDouble();
+//            area = l*b;
+//            perimeter = 2*(l+b);
+//        }else if(n==2){
+//            double r = in.nextDouble();
+//            area = 3.14*r*r;
+//            perimeter=2*3.14*r;
+//        }else{
+//            System.out.println("Invalid Choice");
+//        }
+//        if(n==1 || n==2){
+//        System.out.printf("Area: %.2f\n",area);
+//        System.out.printf("Perimeter: %.2f",perimeter);}
+
+
+//        Exception Handling
+        String s = in.nextLine();
+        int id = in.nextInt();
+        if(id<=0){
+            System.out.println("Invalid ID");
+            System.exit(0);
         }
-        if(n==1 || n==2){
-        System.out.printf("Area: %.2f\n",area);
-        System.out.printf("Perimeter: %.2f",perimeter);}
+        int salary = in.nextInt();
+        if(salary<0){
+            System.out.println("Invalid salary");
+            System.exit(0);
+        }
+        System.out.println("Data Processed");
+
     }
 }
