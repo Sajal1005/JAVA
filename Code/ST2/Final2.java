@@ -145,13 +145,18 @@ public class Final2 {
 //            System.out.println(str[i]);
 //        }
 
-        int n = in.nextInt();
-        int d = n%10;
-        if(d<=5){
-            n-=d;
-        }else{
-            n+=(10-d);
-        }
-        System.out.println(n);
+
+//        Round to nearest 10 multiple
+//        int n = in.nextInt();
+//        int d = n%10;
+//        if(d<=5){
+//            n-=d;
+//        }else{
+//            n+=(10-d);
+//        }
+//        System.out.println(n);
+
+
+//        
     }
 }
