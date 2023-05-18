@@ -187,7 +187,7 @@ public class Final2 {
             area = 3.14*r*r;
             perimeter=2*3.14*r;
         }else{
-            
+            System.out.println("Invalid Choice");
         }
         System.out.printf("Area: %.2f\n",area);
         System.out.printf("Perimeter: %.2f",perimeter);
