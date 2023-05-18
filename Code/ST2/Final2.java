@@ -95,17 +95,40 @@ public class Final2 {
 
 
 //      all the characters of the name displayed are same or not
-        char c = s.charAt(0);
-        int flag=1;
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)!=c){
-                flag=0;
+//        char c = s.charAt(0);
+//        int flag=1;
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)!=c){
+//                flag=0;
+//            }
+//        }
+//        if(flag==0){
+//            System.out.println("NO");
+//        }else{
+//            System.out.println("Yes");
+//        }
+
+
+//        identify the words that are repeated in the text more than or equal to N times
+        int n = in.nextInt();
+        Set<String> set = new HashSet<>();
+        String[] str = s.split(" ");
+        for(int i=0;i<str.length;i++){
+            int count=0;
+            for(int j=0;j<str.length;j++){
+                if(str[i].equals(str[j])){
+                    count++;
+                }
+            }
+            if(count>=n){
+                set.add(str[i]);
             }
         }
-        if(flag==0){
-            System.out.println("NO");
-        }else{
-            System.out.println("Yes");
+        for(int i=0;i<set.size();i++){
+            System.out.println(set.get(i));
+            if(i!=set.size()-1){
+                System.out.print(" ");
+            }
         }
     }
 }
