@@ -67,16 +67,30 @@ public class Final2 {
 
 
 //      number of data characters that do not change position even after the data stream is reversed
-        String rev= "";
-        for(int i=s.length()-1;i>=0;i--){
-            rev+=s.charAt(i);
-        }
-        int count=0;
+//        String rev= "";
+//        for(int i=s.length()-1;i>=0;i--){
+//            rev+=s.charAt(i);
+//        }
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)==rev.charAt(i)){
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
+
+
+//        Sum of numbers between strings
+        int sum=0;
         for(int i=0;i<s.length();i++){
-            if(s.charAt(i)==rev.charAt(i)){
-                count++;
+            if(s.charAt(i)>='0' && s.charAt(i)<='9'){
+                int k=i;
+                while(s.charAt(i)>='0' && s.charAt(i)<='9'){
+                    i++;
+                }
+                sum+=(Integer.parseInt(s.substring(k,i)+""));
             }
         }
-        System.out.println(count);
+        System.out.println(sum);
     }
 }
