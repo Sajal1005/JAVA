@@ -165,7 +165,7 @@ public class Final2 {
             char c = in.next().charAt(0);
             int count=0;
             for(int j=0;j<s.length();j++){
-                if(c==s.charAt(i)){
+                if(c==s.charAt(j)){
                     count++;
                 }
             }
