@@ -148,6 +148,9 @@ public class Final {
         }
         StringBuffer st = new StringBuffer(s2);
         st.reverse();
-        System.out.println(s1+st);
+        if(flag==0){
+            System.out.println(s1+st);
+        }
+
     }
 }
