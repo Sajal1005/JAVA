@@ -39,15 +39,18 @@ public class Final {
 
 
 //        Longest Word in Sentence
-        String[] str = s.split(" ");
-        int ans=0;
-        String st = "";
-        for(int i=0;i<str.length;i++){
-            if(str[i].length()>=ans){
-                ans=str[i].length();
-                st=str[i];
-            }
-        }
-        System.out.println(st);
+//        String[] str = s.split(" ");
+//        int ans=0;
+//        String st = "";
+//        for(int i=0;i<str.length;i++){
+//            if(str[i].length()>=ans){
+//                ans=str[i].length();
+//                st=str[i];
+//            }
+//        }
+//        System.out.println(st);
+
+
+        
     }
 }
