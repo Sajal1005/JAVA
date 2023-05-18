@@ -189,7 +189,8 @@ public class Final2 {
         }else{
             System.out.println("Invalid Choice");
         }
+        if(n==1 || n==2){
         System.out.printf("Area: %.2f\n",area);
-        System.out.printf("Perimeter: %.2f",perimeter);
+        System.out.printf("Perimeter: %.2f",perimeter);}
     }
 }
