@@ -195,18 +195,18 @@ public class Final2 {
 
 
 //        Exception Handling
-        String s = in.nextLine();
-        int id = in.nextInt();
-        if(id<=0){
-            System.out.println("Invalid ID");
-            System.exit(0);
-        }
-        int salary = in.nextInt();
-        if(salary<0){
-            System.out.println("Invalid salary");
-            System.exit(0);
-        }
-        System.out.println("Data Processed");
+//        String s = in.nextLine();
+//        int id = in.nextInt();
+//        if(id<=0){
+//            System.out.println("Invalid ID");
+//            System.exit(0);
+//        }
+//        int salary = in.nextInt();
+//        if(salary<0){
+//            System.out.println("Invalid salary");
+//            System.exit(0);
+//        }
+//        System.out.println("Data Processed");
 
     }
 }
