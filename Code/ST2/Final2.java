@@ -4,7 +4,7 @@ import java.util.*;
 public class Final2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String st = in.nextLine();
+        String s = in.nextLine();
 
 //        First Non Repeating Character
 //        for(int i=0;i<s.length();i++){
@@ -43,16 +43,21 @@ public class Final2 {
 //        }
 
 
-        st=st.toLowerCase();
-        StringBuffer s = new StringBuffer(st);
-        s.setCharAt(0,(char)(s.charAt(0)-32));
-        s.setCharAt(s.length()-1,(char)(s.charAt(s.length()-1)-32));
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)==' '){
-                s.setCharAt(i-1,(char)(s.charAt(i-1)-32));
-                s.setCharAt(i+1,(char)(s.charAt(i+1)-32));
-            }
-        }
-        System.out.println(s);
+//      Capitalizing the first and last letter of each word
+//        String st = in.nextLine();
+//        st=st.toLowerCase();
+//        StringBuffer s = new StringBuffer(st);
+//        s.setCharAt(0,(char)(s.charAt(0)-32));
+//        s.setCharAt(s.length()-1,(char)(s.charAt(s.length()-1)-32));
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)==' '){
+//                s.setCharAt(i-1,(char)(s.charAt(i-1)-32));
+//                s.setCharAt(i+1,(char)(s.charAt(i+1)-32));
+//            }
+//        }
+//        System.out.println(s);
+
+
+        
     }
 }
