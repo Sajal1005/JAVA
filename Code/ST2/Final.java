@@ -86,14 +86,31 @@ public class Final {
 
 
 //        Title Case
-        String str[] = s.split(" ");
-        for(int i=0;i<str.length;i++){
-            StringBuffer st = new StringBuffer(str[i]);
-            st.setCharAt(0,(char)(st.charAt(0)-32));
-            System.out.print(st);
-            if(i!=str.length-1){
-                System.out.print(" ");
+//        String str[] = s.split(" ");
+//        for(int i=0;i<str.length;i++){
+//            StringBuffer st = new StringBuffer(str[i]);
+//            st.setCharAt(0,(char)(st.charAt(0)-32));
+//            System.out.print(st);
+//            if(i!=str.length-1){
+//                System.out.print(" ");
+//            }
+//        }
+
+//        Find The Most Common Character
+        int ans=0;
+        char c='#';
+        for(int i=0;i<s.length();i++){
+            int count=0;
+            for(int j=0;j<s.length();j++){
+                if(s.charAt(i)==s.charAt(j)){
+                    count++;
+                }
+                if(count>ans){
+                    ans=count;
+                    c=s.charAt(i);
+                }
             }
         }
+        System.out.println(c);
     }
 }
