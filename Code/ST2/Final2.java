@@ -187,7 +187,7 @@ public class Final2 {
             area = 3.14*r*r;
             perimeter=2*3.14*r;
         }
-        System.out.println("Area: "+area);
-        System.out.println("Perimeter: "+perimeter);
+        System.out.printf("Area: %.2f",area);
+        System.out.printf("Perimeter: %.2f",perimeter);
     }
 }
