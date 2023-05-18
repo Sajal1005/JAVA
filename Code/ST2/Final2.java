@@ -111,6 +111,7 @@ public class Final2 {
 
 //        identify the words that are repeated in the text more than or equal to N times
         int n = in.nextInt();
+        int flag=0;
         Set<String> set = new HashSet<>();
         String[] str = s.split(" ");
         for(int i=0;i<str.length;i++){
@@ -120,14 +121,14 @@ public class Final2 {
                     count++;
                 }
             }
-            if(count>=n){
+            if(count>=n && !set.contains(str[i])){
                 set.add(str[i]);
-            }
-        }
-        for(int i=0;i<set.size();i++){
-            System.out.println(set.get(i));
-            if(i!=set.size()-1){
-                System.out.print(" ");
+                if(flag==0){
+                    System.out.print(str[i]);
+                    flag=1;
+                }else{
+                    System.out.print(" "+str[i]);
+                }
             }
         }
     }
