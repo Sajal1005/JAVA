@@ -134,15 +134,21 @@ public class Final2 {
 
 
 //        Sort strings
+//        int n = in.nextInt();
+//        in.nextLine();
+//        String[] str = new String[n];
+//        for(int i=0;i<n;i++){
+//            str[i]=in.nextLine();
+//        }
+//        Arrays.sort(str);
+//        for(int i=0;i<n;i++){
+//            System.out.println(str[i]);
+//        }
+
         int n = in.nextInt();
-        in.nextLine();
-        String[] str = new String[n];
-        for(int i=0;i<n;i++){
-            str[i]=in.nextLine();
-        }
-        Arrays.sort(str);
-        for(int i=0;i<n;i++){
-            System.out.println(str[i]);
-        }
+        int a = (n / 10) * 10;
+        int b = a + 10;
+        System.out.println((n - a > b - n)? b : a);
+
     }
 }
