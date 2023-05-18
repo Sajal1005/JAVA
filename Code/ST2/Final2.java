@@ -4,7 +4,7 @@ import java.util.*;
 public class Final2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String s = in.nextLine();
+//        String s = in.nextLine();
 
 //        First Non Repeating Character
 //        for(int i=0;i<s.length();i++){
@@ -110,26 +110,39 @@ public class Final2 {
 
 
 //        identify the words that are repeated in the text more than or equal to N times
+//        int n = in.nextInt();
+//        int flag=0;
+//        Set<String> set = new HashSet<>();
+//        String[] str = s.split(" ");
+//        for(int i=0;i<str.length;i++){
+//            int count=0;
+//            for(int j=0;j<str.length;j++){
+//                if(str[i].equals(str[j])){
+//                    count++;
+//                }
+//            }
+//            if(count>=n && !set.contains(str[i])){
+//                set.add(str[i]);
+//                if(flag==0){
+//                    System.out.print(str[i]);
+//                    flag=1;
+//                }else{
+//                    System.out.print(" "+str[i]);
+//                }
+//            }
+//        }
+
+
+//        Sort strings
         int n = in.nextInt();
-        int flag=0;
-        Set<String> set = new HashSet<>();
-        String[] str = s.split(" ");
-        for(int i=0;i<str.length;i++){
-            int count=0;
-            for(int j=0;j<str.length;j++){
-                if(str[i].equals(str[j])){
-                    count++;
-                }
-            }
-            if(count>=n && !set.contains(str[i])){
-                set.add(str[i]);
-                if(flag==0){
-                    System.out.print(str[i]);
-                    flag=1;
-                }else{
-                    System.out.print(" "+str[i]);
-                }
-            }
+        in.nextLine();
+        String[] str = new String[n];
+        for(int i=0;i<n;i++){
+            str[i]=in.nextLine();
+        }
+        Arrays.sort(str);
+        for(int i=0;i<n;i++){
+            System.out.println(str[i]);
         }
     }
 }
