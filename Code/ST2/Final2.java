@@ -81,16 +81,19 @@ public class Final2 {
 
 
 //        Sum of numbers between strings
-        int sum=0;
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)>='0' && s.charAt(i)<='9'){
-                int k=i;
-                while(s.charAt(i)>='0' && s.charAt(i)<='9'){
-                    i++;
-                }
-                sum+=(Integer.parseInt(s.substring(k,i)+""));
-            }
-        }
-        System.out.println(sum);
+//        int sum=0;
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)>='0' && s.charAt(i)<='9'){
+//                int k=i;
+//                while(s.charAt(i)>='0' && s.charAt(i)<='9'){
+//                    i++;
+//                }
+//                sum+=(Integer.parseInt(s.substring(k,i)+""));
+//            }
+//        }
+//        System.out.println(sum);
+
+
+        
     }
 }
