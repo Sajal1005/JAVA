@@ -146,9 +146,12 @@ public class Final2 {
 //        }
 
         int n = in.nextInt();
-        int a = (n / 10) * 10;
-        int b = a + 10;
-        System.out.println((n - a > b - n)? b : a);
-
+        int d = n%10;
+        if(d<=5){
+            n-=d;
+        }else{
+            n+=(10-d);
+        }
+        System.out.println(n);
     }
 }
