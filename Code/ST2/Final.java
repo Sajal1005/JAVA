@@ -4,7 +4,7 @@ import java.util.*;
 public class Final {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String s = in.nextLine();
+//        String s = in.nextLine();
 
 //        Palindrome
 //        int i=0,j=s.length()-1,flag=1;
@@ -20,6 +20,23 @@ public class Final {
 //        if(flag==1){
 //            System.out.println(true);
 //        }
+
+
+//        Anagram
+//        String s1=in.nextLine();
+//        String s2=in.nextLine();
+//        char arr1[] = s1.toCharArray();
+//        char arr2[] = s2.toCharArray();
+//        Arrays.sort(arr1);
+//        Arrays.sort(arr2);
+//        String a1 = new String(arr1);
+//        String a2 = new String(arr2);
+//        if(a1.equals(a2)){
+//            System.out.println(true);
+//        }else{
+//            System.out.println(false);
+//        }
+
 
         
     }
