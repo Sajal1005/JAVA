@@ -182,12 +182,14 @@ public class Final2 {
             double b = in.nextDouble();
             area = l*b;
             perimeter = 2*(l+b);
-        }else{
+        }else if(n==2){
             double r = in.nextDouble();
             area = 3.14*r*r;
             perimeter=2*3.14*r;
+        }else{
+            
         }
-        System.out.printf("Area: %.2f",area);
+        System.out.printf("Area: %.2f\n",area);
         System.out.printf("Perimeter: %.2f",perimeter);
     }
 }
