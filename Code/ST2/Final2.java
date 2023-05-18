@@ -157,6 +157,20 @@ public class Final2 {
 //        System.out.println(n);
 
 
-//        
+//        total sale count of the desired N products
+        String s = in.nextLine();
+        int n = in.nextInt();
+        int sum=0;
+        for(int i=0;i<n;i++){
+            char c = in.next().charAt(0);
+            int count=0;
+            for(int j=0;j<s.length();j++){
+                if(c==s.charAt(i)){
+                    count++;
+                }
+            }
+            sum+=(count*((int)(c)));
+        }
+        System.out.println(sum);
     }
 }
