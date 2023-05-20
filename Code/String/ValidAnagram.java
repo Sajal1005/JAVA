@@ -3,6 +3,9 @@ import java.util.*;
 
 public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
+        if(s.length()!=t.length()){
+            return false;
+        }
         char[] chars = s.toCharArray();
         Arrays.sort(chars);
         s="";
