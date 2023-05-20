@@ -19,7 +19,7 @@ public class RemoveNthNodeFromEnd {
 //        temp.next=temp.next.next;
 //        return head;
 
-        
+
 //      Slow-Fast Pointers
         ListNode fast=head,slow=head;
         for(int i=0;i<n;i++){
