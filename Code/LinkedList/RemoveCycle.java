@@ -27,5 +27,6 @@ public class RemoveCycle {
             }
         }
         fast.next=null;
+        return head;
     }
 }
