@@ -208,5 +208,145 @@ public class Final2 {
 //        }
 //        System.out.println("Data Processed");
 
+
+//        Counting the occurences of substring
+//        String s = in.nextLine();
+//        String sub = in.nextLine();
+//        int count=0;
+//        while(s.indexOf(sub)!=-1){
+//            int n = s.indexOf(sub);
+//            s=s.substring(n+1);
+//            count++;
+//        }
+//        System.out.println(count);
+
+
+//        IAmACompetitiveProgrammer
+//        String s = in.nextLine();
+//        String ans=s.charAt(0)+"";
+//        for(int i=1;i<s.length();i++){
+//            if(s.charAt(i)>='A' && s.charAt(i)<='Z'){
+//                System.out.println(ans);
+//                ans=s.charAt(i)+"";
+//            }else{
+//                ans+=s.charAt(i);
+//            }
+//        }
+
+
+//        Strings-Difference in Ascii Codes
+//        String s= in.nextLine();
+//        String ans="";
+//        for(int i=0;i<s.length();i++){
+//            ans+=s.charAt(i);
+//            if(i+1<s.length()){
+//                ans+=(s.charAt(i+1)-s.charAt(i));
+//            }
+//        }
+//        System.out.println(ans);
+
+
+//        String Compression
+//        String s = in.nextLine();
+//        String ans="";
+//        char c=s.charAt(0);
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)==c){
+//                count++;
+//            }else{
+//                ans+=c;
+//                ans+=count;
+//                count=1;
+//                c=s.charAt(i);
+//            }
+//        }
+//        ans+=c;
+//        ans+=count;
+//        System.out.println(ans);
+
+
+//        String s = in.nextLine();
+//        s=s.toLowerCase();
+//        String sub = in.nextLine();
+//        sub=sub.toLowerCase();
+//        int count=0;
+//        while(s.indexOf(sub)!=-1){
+//            int n = s.indexOf(sub);
+//            s=s.substring(n+1);
+//            count++;
+//        }
+//        System.out.println(count);
+
+
+    //
+//        String s = in.nextLine();
+//        String[] str = s.split(" ");
+//        for(int i=0;i<str.length;i++){
+//            StringBuffer st = new StringBuffer(str[i]);
+//            System.out.print(st.reverse());
+//            if(i!=str.length-1){
+//                System.out.print(" ");
+//            }
+//        }
+
+//        String s = in.nextLine();
+//        char c = s.charAt(0);
+//        String ans="";
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            if(c==s.charAt(i)){
+//                count++;
+//            }else{
+//                ans+=c;
+//                ans+=count;
+//                count=1;
+//                c=s.charAt(i);
+//            }
+//        }
+//        ans+=c;
+//        ans+=count;
+//        System.out.println(ans);
+
+//        String s = in.nextLine();
+//        String ans=s.charAt(0)+"";
+//        for(int i=1;i<s.length();i++){
+//            if(s.charAt(i)>='A' && s.charAt(i)<='Z'){
+//                System.out.println(ans);
+//                ans=s.charAt(i)+"";
+//            }else{
+//                ans+=s.charAt(i);
+//            }
+//        }
+//        System.out.println(ans);
+
+//        StringBuffer s = new StringBuffer(in.nextLine());
+//        for(int i=0;i<s.length();i++){
+//            if(i+1<s.length() && s.charAt(i)==s.charAt(i+1)){
+//                s.deleteCharAt(i+1);
+//                i--;
+//            }
+//        }
+//        System.out.println(s);
+
+
+        String s = in.nextLine();
+        String str[] = s.split(" ");
+        for(int i=1;i<20;i++){
+            int flag=0;
+            for(int j=0;j<str.length;j++){
+                if(str[j].length()==i){
+                    if(flag==0){
+                        flag=1;
+                    }else{
+                        System.out.print(" ");
+                    }
+                    System.out.print(str[j]);
+                }
+            }
+            if(flag!=0) {
+                System.out.println();
+            }
+        }
     }
 }
