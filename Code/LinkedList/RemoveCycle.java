@@ -1,2 +1,5 @@
-package LinkedList;public class RemoveCycle {
+package LinkedList;
+
+public class RemoveCycle {
+    
 }
