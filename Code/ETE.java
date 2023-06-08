@@ -746,16 +746,54 @@ class ETE{
 //            }
 //        }
 
+//        Scanner in = new Scanner(System.in);
+//        String s = in.next();
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            for(int j=i;j<s.length();j++){
+//                if(pal(s.substring(i,j+1))){
+//                    count++;
+//                }
+//            }
+//        }
+//        System.out.println(count);
+
         Scanner in = new Scanner(System.in);
-        String s = in.next();
-        int count=0;
-        for(int i=0;i<s.length();i++){
-            for(int j=i;j<s.length();j++){
-                if(pal(s.substring(i,j+1))){
-                    count++;
+//        int p=in.nextInt();
+//        for(int i=0;i<p;i++){
+//            int n = in.nextInt();
+//            int k= in.nextInt();
+//            int ans=0;
+//            while(ans^)
+//        }
+
+        int n = in.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=in.nextInt();
+        }
+
+        for(int i=0;i<n;i++){
+            int flag=0;
+            for(int j=i+1;j<n;j++){
+                if(arr[j]>arr[i]){
+                    System.out.print(arr[j]+" ");
+                    flag=1;
+                    break;
                 }
             }
+            if(flag==0){
+                for(int j=0;j<i;j++){
+                    if(arr[j]>arr[i]){
+                        System.out.print(arr[j]+" ");
+                        flag=1;
+                        break;
+                    }
+                }
+            }
+            if(flag==0){
+                System.out.print(-1+" ");
+            }
         }
-        System.out.println(count);
     }
 }
