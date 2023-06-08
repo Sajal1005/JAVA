@@ -613,11 +613,14 @@ class ETE{
 //        }
 //        System.out.println(max);
 
-        int n = in.nextInt();
-        HashSet<String> s = new HashSet<>();
-        for(int i=0;i<n;i++){
-            s.add(in.next());
-        }
-        System.out.println(s.size());
+//        int n = in.nextInt();
+//        HashSet<String> s = new HashSet<>();
+//        for(int i=0;i<n;i++){
+//            s.add(in.next());
+//        }
+//        System.out.println(s.size());
+
+        String s = in.next();
+        
     }
 }
