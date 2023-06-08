@@ -602,14 +602,15 @@ class ETE{
 //            }
 //        }
 //        System.out.print(c+""+count);
-        int max
+        int max=0;
         String s = in.next();
         for(int i=0;i<s.length();i++){
             for(int j=i+1;j<s.length();j++){
                 if(uniq(s.substring(i,j+1))){
-
+                    max=Math.max(max,j-i);
                 }
             }
         }
+        System.out.println(max);
     }
 }
