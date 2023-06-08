@@ -217,12 +217,29 @@ class ETE{
 //            }
 //            System.out.print(count+" ");
 //        }
-        int n=in.nextInt();
-        for(int i=0;i<2*n-1;i++){
-            for(int j=0;j<2*n-1;j++){
-                System.out.print(n-Math.min(Math.min(i,j),Math.min(2*n-i-2,2*n-j-2)));
+//        int n=in.nextInt();
+//        for(int i=0;i<2*n-1;i++){
+//            for(int j=0;j<2*n-1;j++){
+//                System.out.print(n-Math.min(Math.min(i,j),Math.min(2*n-i-2,2*n-j-2)));
+//            }
+//            System.out.println();
+//        }
+        int n = in.nextInt();
+        int k = in.nextInt();
+        int and=0,or=0,xor=0;
+        for(int i=1;i<=n;i++){
+            for(int j=i+1;j<=n;j++){
+                if((i&j)>and && (i&j)<k){
+                    and=Math.max(and,i&j);
+                }
+                if((i|j)>or && (i|j)<k){
+                    or=Math.max(or,i|j);
+                }
+                if((i^j)>xor && (i^j)<k){
+                    xor=Math.max(xor,i^j);
+                }
             }
-            System.out.println();
         }
+        System.out.println(and+" "+or+" "+xor);
     }
 }
