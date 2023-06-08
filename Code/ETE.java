@@ -634,17 +634,20 @@ class ETE{
 //            }
 //        }
 
+//        int n = in.nextInt();
+//        String ans = "";
+//        int max=0;
+//        for(int i=0;i<n;i++){
+//            String s = in.next();
+//            int x = in.nextInt();
+//            if(x>max){
+//                ans=s;
+//                max=x;
+//            }
+//        }
+//        System.out.println(max);
+
         int n = in.nextInt();
-        String ans = "";
-        int max=0;
-        for(int i=0;i<n;i++){
-            String s = in.next();
-            int x = in.nextInt();
-            if(x>max){
-                ans=s;
-                max=x;
-            }
-        }
-        System.out.println(max);
+        
     }
 }
