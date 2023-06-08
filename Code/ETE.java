@@ -78,22 +78,37 @@ class ETE{
 //            }
 //        }
 
+//        int n = in.nextInt();
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        while(n!=0){
+//            arr.add(n%10);
+//            n/=10;
+//        }
+//        Collections.sort(arr);
+//        int ans1=0,ans2=0;
+//        for(int i=0;i<arr.size();i++){
+//            ans1*=10;
+//            ans1+=arr.get(i);
+//        }
+//        for(int i=arr.size()-1;i>=0;i--){
+//            ans2*=10;
+//            ans2+=arr.get(i);
+//        }
+//        System.out.println(ans1+ans2);
+
         int n = in.nextInt();
-        ArrayList<Integer> arr = new ArrayList<>();
-        while(n!=0){
-            arr.add(n%10);
-            n/=10;
+        int arr[]= new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=in.nextInt();
         }
-        Collections.sort(arr);
-        int ans1=0,ans2=0;
-        for(int i=0;i<arr.size();i++){
-            ans1*=10;
-            ans1+=arr.get(i);
+        int count=0;
+        int n1=in.nextInt();
+        int n2=in.nextInt();
+        for(int i=0;i<n;i++){
+            if(n1%arr[i]==0 && n2%arr[i]==0){
+                count++;
+            }
         }
-        for(int i=arr.size()-1;i>=0;i--){
-            ans2*=10;
-            ans2+=arr.get(i);
-        }
-        System.out.println(ans1+ans2);
+        System.out.println(count);
     }
 }
