@@ -419,6 +419,11 @@ class ETE{
         }
         System.out.println(max);
         System.out.println(min);
+        int ans=arr[0]-arr[1];
+        for(int i=2;i<5;i++){
+            ans-=arr[i];
+        }
+        System.out.println(ans);
         
 
     }
