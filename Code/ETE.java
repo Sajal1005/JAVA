@@ -124,19 +124,38 @@ class ETE{
 //        }
 //        System.out.println(arr[n-k]);
 
+//        int n = in.nextInt();
+//        int k = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = in.nextInt();
+//        }
+//        for(int i=0;i<n;i++){
+//            for(int j=i+1;j<n;j++){
+//                if(arr[i]+arr[j]==k){
+//                    System.out.println(i+" "+j);
+//                    System.exit(0);
+//                }
+//            }
+//        }
+
+        int ans=-1;
         int n = in.nextInt();
-        int k = in.nextInt();
         int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr[i] = in.nextInt();
+            arr[i]=in.nextInt();
         }
         for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]+arr[j]==k){
-                    System.out.println(i+" "+j);
-                    System.exit(0);
+            int count=0;
+            for(int j=0;j<n;j++){
+                if(arr[i]==arr[j]){
+                    count++;
                 }
             }
+            if(count==arr[i]){
+                ans=Math.max(ans,count);
+            }
         }
+        System.out.println(ans);
     }
 }
