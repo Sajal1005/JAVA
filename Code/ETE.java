@@ -691,21 +691,32 @@ class ETE{
 //        String ans = new String(ch);
 //        System.out.println(ans);
 
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//        int j=in.nextInt();
+//        int m = in.nextInt();
+//        if(n>=j){
+//            n-=j;
+//            System.out.println("John: tickets booked: "+j);
+//        }else{
+//            System.out.println("John: not booked");
+//        }
+//        if(n>=m){
+//            n-=m;
+//            System.out.println("Mike: tickets booked: "+m);
+//        }else{
+//            System.out.println("John: not booked");
+//        }
+
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int j=in.nextInt();
-        int m = in.nextInt();
-        if(n>=j){
-            n-=j;
-            System.out.println("John: tickets booked: "+j);
-        }else{
-            System.out.println("John: not booked");
+        int arr[]= new int[5];
+        for(int i=0;i<5;i++){
+            arr[i]=in.nextInt();
         }
-        if(n>=m){
-            n-=m;
-            System.out.println("Mike: tickets booked: "+m);
-        }else{
-            System.out.println("John: not booked");
+        int sum = arr[0]-arr[1];
+        for(int i=2;i<5;i++){
+            sum-=arr[i];
         }
+        System.out.println(sum);
     }
 }
