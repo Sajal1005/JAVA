@@ -520,10 +520,11 @@ class ETE{
 //        }
 
         int[] arr = new int[5];
-        int ans=arr[0]-arr[1];
+
         for(int i=0;i<5;i++){
             arr[i]=in.nextInt();
         }
+        int ans=arr[0]-arr[1];
         for(int i=2;i<5;i++){
             ans-=arr[i];
         }
