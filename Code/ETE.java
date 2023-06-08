@@ -356,7 +356,7 @@ class ETE{
         for(int i=0;i<n;i++){
             int temp=arr[i][0];
             arr[i][0]=arr[i][m-1];
-            arr[i][m-1]=arr[i][0];
+            arr[i][m-1]=temp;
         }
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
