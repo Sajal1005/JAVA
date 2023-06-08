@@ -430,19 +430,27 @@ class ETE{
 //            System.out.println("Subtraction result is less than Zero");
 //        }
 
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-        int min =arr[0];
-        System.out.print(min);
-        for(int i=1;i<n;i++){
-            if(arr[i]<min){
-                System.out.print(arr[i]);
-                min=arr[i];
-            }
-        }
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int min =arr[0];
+//        System.out.print(min);
+//        for(int i=1;i<n;i++){
+//            if(arr[i]<min){
+//                System.out.print(arr[i]);
+//                min=arr[i];
+//            }
+//        }
 
+        int n = in.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=n-1;j>=0;j--){
+                System.out.print(".");
+            }
+            
+            System.out.println();
+        }
     }
 }
