@@ -353,13 +353,11 @@ class ETE{
                 arr[i][j]=in.nextInt();
             }
         }
-        int k=m-1;
-        for(int i=0;i<n;i++){
-            int ans=0;
-            for(int j=0;j<m;j++){
-                ans+=arr[i][j];
+        for(int j=0;j<m;j++){
+            for(int i=0;i<n;i++){
+                System.out.print(arr[i][j]+" ");
             }
-            System.out.println(ans);
+            System.out.println();
         }
     }
 }
