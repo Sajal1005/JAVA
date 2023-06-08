@@ -795,17 +795,22 @@ class ETE{
 
 
         int n = in.nextInt();
-        int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-        int min=arr[0];
-        System.out.print(min+" ");
-        for(int i=1;i<n;i++){
-            if(arr[i]<min){
-                System.out.print(arr[i]+" ");
-                min=arr[i];
+            for(int j=0;j<n-i-1;j++){
+                System.out.print(".");
+            }for(int j=0;j<i+1;j++){
+                System.out.print("*");
             }
+            System.out.println();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i;j++){
+                System.out.print(".");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
