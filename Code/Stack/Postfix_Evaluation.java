@@ -8,7 +8,7 @@ public class Postfix_Evaluation {
         Stack<Integer> st = new Stack<>();
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)>='0' && s.charAt(i)<='9'){
-                st.push((int)s.charAt(i));
+                st.push(Integer.parseInt(s.charAt(i)+""));
             }else{
                 int op1 = st.pop();
                 int op2 = st.pop();
