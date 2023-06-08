@@ -312,13 +312,22 @@ class ETE{
 //            }
 //        }
 //        System.out.println(ans);
-        int i=Math.max(n1,n2);
-        while(true){
-            if(i%n1==0 && i%n2==0){
-                System.out.println(i);
-                break;
+//        int i=Math.max(n1,n2);
+//        while(true){
+//            if(i%n1==0 && i%n2==0){
+//                System.out.println(i);
+//                break;
+//            }
+//            i++;
+//        }
+        int n = in.nextInt();
+        ArrayList<Integer> arr = new ArrayList<>();
+        for(int i=2;i<;i++){
+            if(n%i==0 && prime(i)){
+                arr.add(i);
             }
-            i++;
         }
+        int i=0;
+        while()
     }
 }
