@@ -500,7 +500,7 @@ class ETE{
                     count++;
                 }
             }
-            if(count>ans){
+            if(count>ans && ){
                 c=s.charAt(i);
                 ans=count;
             }
