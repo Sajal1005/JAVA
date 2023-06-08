@@ -411,9 +411,15 @@ class ETE{
 //        System.out.println(ans);
 
         int arr[] = new int[5];
+        int min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
         for(int i=0;i<5;i++){
             arr[i]=in.nextInt();
+            min=Math.min(arr[i],min);
+            max=Math.max(arr[i],max);
         }
+        System.out.println(max);
+        System.out.println(min);
         
+
     }
 }
