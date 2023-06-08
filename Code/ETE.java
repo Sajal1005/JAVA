@@ -465,14 +465,18 @@ class ETE{
 //        }
 
         int n=in.nextInt();
-        ArrayList<Integer> arr = new ArrayList<>();
-        for(int i=0;i<n-1;i++){
-            arr.add(in.nextInt());
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=in.nextInt();
         }
-        for(int i=1;i<=n;i++){
-            if(!arr.contains(i)){
-                System.out.println(i);
+        int sum=0,ans=Integer.MIN_VALUE;
+        for(int i=0;i<n;i++){
+            if(sum<0){
+                sum=0;
             }
+            sum+=arr[i];
+            ans=Math.max(ans,sum);
         }
+        System.out.println(ans);
     }
 }
