@@ -722,6 +722,7 @@ class ETE{
                     System.out.print(j);
                 }
             }
+            System.out.println();
         }
     }
 }
