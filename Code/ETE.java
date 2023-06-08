@@ -533,6 +533,6 @@ class ETE{
         int w = in.nextInt();
         int h = in.nextInt();
         int r = in.nextInt();
-        System.out.println(w<=2*r && h<=2*r);
+        System.out.println(2*r>=(Math.sqrt(w*w+h*h)));
     }
 }
