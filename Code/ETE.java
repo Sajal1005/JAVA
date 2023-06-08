@@ -355,7 +355,11 @@ class ETE{
         }
         int k=m-1;
         for(int i=0;i<n;i++){
-            System.out.println(arr[i][k--]);
+            int ans=0;
+            for(int j=0;j<m;j++){
+                ans+=arr[i][j];
+            }
+            System.out.println(ans);
         }
     }
 }
