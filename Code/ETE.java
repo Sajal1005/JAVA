@@ -578,18 +578,25 @@ class ETE{
 //        }
 //        System.out.println(n);
 
+//        String s = in.next();
+//        char c = s.charAt(0);
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            if(c==s.charAt(i)){
+//                count++;
+//            }else{
+//                System.out.print(c+""+count);
+//                count=1;
+//                c=s.charAt(i);
+//            }
+//        }
+//        System.out.print(c+""+count);
+
         String s = in.next();
-        char c = s.charAt(0);
-        int count=0;
         for(int i=0;i<s.length();i++){
-            if(c==s.charAt(i)){
-                count++;
-            }else{
-                System.out.print(c+""+count);
-                count=1;
-                c=s.charAt(i);
+            for(int j=i+1;j<s.length();j++){
+                
             }
         }
-        System.out.print(c+""+count);
     }
 }
