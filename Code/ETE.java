@@ -111,17 +111,24 @@ class ETE{
 //        }
 //        System.out.println(count);
 
+//        int n = in.nextInt();
+//        int k = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        Arrays.sort(arr);
+//        if(k>arr.length){
+//            System.out.println("Invalid Input");
+//            System.exit(0);
+//        }
+//        System.out.println(arr[n-k]);
+
         int n = in.nextInt();
         int k = in.nextInt();
         int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
+            
         }
-        Arrays.sort(arr);
-        if(k>arr.length){
-            System.out.println("Invalid Input");
-            System.exit(0);
-        }
-        System.out.println(arr[n-k]);
     }
 }
