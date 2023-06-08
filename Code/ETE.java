@@ -3,6 +3,13 @@ import com.sun.security.jgss.GSSUtil;
 import java.util.*;
 
 class ETE{
+    public static boolean pal(String s){
+        StringBuffer str = new StringBuffer(s);
+        if(str.reverse().equals(s)){
+            return true;
+        }
+        return false;
+    }
     public static boolean cube(int n){
         if(n==1){
             return true;
@@ -723,20 +730,32 @@ class ETE{
 //                }
 //            }
 //            System.out.println();
+//        Scanner in = new Scanner(System.in);
+//        int n=in.nextInt();
+//        int count=1;
+//        int arr[]=new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        for(int i=0;i<n-1;i++){
+//            System.out.println(count);
+//            if(arr[i+1]>arr[i]){
+//                count++;
+//            }else{
+//                count=1;
+//            }
+//        }
+
         Scanner in = new Scanner(System.in);
-        int n=in.nextInt();
-        int count=1;
-        int arr[]=new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-        for(int i=0;i<n-1;i++){
-            System.out.println(count);
-            if(arr[i+1]>arr[i]){
-                count++;
-            }else{
-                count=1;
+        String s = in.next();
+        int count=0;
+        for(int i=0;i<s.length();i++){
+            for(int j=i;j<s.length();j++){
+                if(pal(s.substring(i,j+1))){
+                    count++;
+                }
             }
         }
+        System.out.println(count);
     }
 }
