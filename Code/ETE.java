@@ -276,12 +276,20 @@ class ETE{
 //            }
 //        }
 
+//        int n = in.nextInt();
+//        int count=0,ans=0;
+//        while(n!=0){
+//            ans+=(Math.pow(2,count++)*n%10);
+//            n/=10;
+//        }
+//        System.out.println(ans);
+
         int n = in.nextInt();
-        int count=0,ans=0;
+        ArrayList<Integer> arr = new ArrayList<>();
         while(n!=0){
-            ans+=(Math.pow(2,count++)*n%10);
-            n/=10;
+            arr.add(n%2);
+            n/=2;
         }
-        System.out.println(ans);
+        System.out.println(arr);
     }
 }
