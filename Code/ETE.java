@@ -383,12 +383,15 @@ class ETE{
 //        }
 //        System.out.println(ans);
 
-        int n=in.nextInt();
-        int m = in.nextInt();
-        for(int i=n+1;i<m;i++){
-            if(arm(i)){
-                System.out.print(i+" ");
-            }
-        }
+//        int n=in.nextInt();
+//        int m = in.nextInt();
+//        for(int i=n+1;i<m;i++){
+//            if(arm(i)){
+//                System.out.print(i+" ");
+//            }
+//        }
+
+        int arr[] = new int[5];
+        System.out.println(arr.length());
     }
 }
