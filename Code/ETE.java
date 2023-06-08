@@ -188,19 +188,34 @@ class ETE{
 //            a=temp;
 //        }
 //        System.out.println(ans);
-        int ans=0;
-        int n1=in.nextInt();
-        int n2=in.nextInt();
-        int n3=in.nextInt();
-        ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
-        ans*=10;n1/=10;n2/=10;n3/=10;
-        ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
-        ans*=10;n1/=10;n2/=10;n3/=10;
-        ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
-        ans*=10;n1/=10;n2/=10;n3/=10;
-        ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
-        StringBuilder s = new StringBuilder(ans+"");
+//        int ans=0;
+//        int n1=in.nextInt();
+//        int n2=in.nextInt();
+//        int n3=in.nextInt();
+//        ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
+//        ans*=10;n1/=10;n2/=10;n3/=10;
+//        ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
+//        ans*=10;n1/=10;n2/=10;n3/=10;
+//        ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
+//        ans*=10;n1/=10;n2/=10;n3/=10;
+//        ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
+//        StringBuilder s = new StringBuilder(ans+"");
+//
+//        System.out.println(s.reverse());
 
-        System.out.println(s.reverse());
+        int n = in.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=in.nextInt();
+        }
+        for(int i=0;i<10;i++){
+            int count=0;
+            for(int j=0;j<n;j++){
+                if(arr[j]==i){
+                    count++;
+                }
+            }
+            System.out.print(count+" ");
+        }
     }
 }
