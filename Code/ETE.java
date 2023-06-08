@@ -96,19 +96,32 @@ class ETE{
 //        }
 //        System.out.println(ans1+ans2);
 
+//        int n = in.nextInt();
+//        int arr[]= new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int count=0;
+//        int n1=in.nextInt();
+//        int n2=in.nextInt();
+//        for(int i=0;i<n;i++){
+//            if(n1%arr[i]==0 && n2%arr[i]==0){
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
+
         int n = in.nextInt();
-        int arr[]= new int[n];
+        int k = in.nextInt();
+        int arr[] = new int[n];
         for(int i=0;i<n;i++){
             arr[i]=in.nextInt();
         }
-        int count=0;
-        int n1=in.nextInt();
-        int n2=in.nextInt();
-        for(int i=0;i<n;i++){
-            if(n1%arr[i]==0 && n2%arr[i]==0){
-                count++;
-            }
+        Arrays.sort(arr);
+        if(k>arr.length){
+            System.out.println("Invalid Input");
+            System.exit(0);
         }
-        System.out.println(count);
+        System.out.println(arr[n-k]);
     }
 }
