@@ -14,6 +14,17 @@ class ETE{
         }
         return false;
     }
+    public static boolean uniq(String s){
+        HashSet<Character> set = new HashSet<>();
+        for(int i=0;i<s.length();i++){
+            if(set.contains(s.charAt(i))){
+                return false;
+            }else{
+                set.add(s.charAt(i));
+            }
+        }
+        return true;
+    }
     public static boolean prime(int n){
         if(n<2){
             return false;
@@ -595,7 +606,7 @@ class ETE{
         String s = in.next();
         for(int i=0;i<s.length();i++){
             for(int j=i+1;j<s.length();j++){
-                
+
             }
         }
     }
