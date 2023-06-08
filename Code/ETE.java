@@ -778,6 +778,12 @@ class ETE{
 //            System.out.print(str[i]+" ");
 //        }
 
-        
+        int n = in.nextInt();
+        ArrayList<Integer> arr = new ArrayList<>();
+        while(n!=0){
+            arr.add(n%2);
+            n/=2;
+        }
+        System.out.println(arr);
     }
 }
