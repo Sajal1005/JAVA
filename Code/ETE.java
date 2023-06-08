@@ -395,11 +395,19 @@ class ETE{
 //        System.out.println(arr.length());
 
         int n = in.nextInt();
-        int ans=n*n,sum=0;
-        while(ans!=0){
-            sum+=ans%10;
-            ans/=10;
+//        int ans=n*n,sum=0;
+//        while(ans!=0){
+//            sum+=ans%10;
+//            ans/=10;
+//        }
+//        System.out.println(sum==n);
+        int ans=0;
+        while(n!=0){
+            if(n%2==1){
+                ans++;
+            }
+            n/=2;
         }
-        System.out.println(sum==n);
+        System.out.println(ans);
     }
 }
