@@ -201,6 +201,6 @@ class ETE{
         ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
         StringBuilder s = new StringBuilder(ans+"");
 
-        System.out.println(s.reverse);
+        System.out.println(s.reverse());
     }
 }
