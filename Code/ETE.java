@@ -391,7 +391,15 @@ class ETE{
 //            }
 //        }
 
-        int arr[] = new int[5];
-        System.out.println(arr.length());
+//        int arr[] = new int[5];
+//        System.out.println(arr.length());
+
+        int n = in.nextInt();
+        int ans=n*n,sum=0;
+        while(ans!=0){
+            sum+=ans%10;
+            ans/=10;
+        }
+        System.out.println(sum==n);
     }
 }
