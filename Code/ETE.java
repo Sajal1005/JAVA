@@ -193,11 +193,11 @@ class ETE{
         int n2=in.nextInt();
         int n3=in.nextInt();
         ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
-        ans*=10;
+        ans*=10;n1/=10;n2/=10;n3/=10;
         ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
-        ans*=10;
+        ans*=10;n1/=10;n2/=10;n3/=10;
         ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
-        ans*=10;
+        ans*=10;n1/=10;n2/=10;n3/=10;
         ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
         System.out.println(ans);
     }
