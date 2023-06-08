@@ -18,6 +18,7 @@ class ETE{
             list.add(ans%10);
             ans/=10;
         }
+        Collections.reverse(list);
         System.out.println(list);
     }
 }
