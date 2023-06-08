@@ -22,6 +22,7 @@ public class Postfix_Evaluation {
                     st.push(op2/op1);
                 }
             }
+            System.out.println(st);
         }
         System.out.println(st.pop());
     }
