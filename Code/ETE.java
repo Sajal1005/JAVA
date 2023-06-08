@@ -333,6 +333,7 @@ class ETE{
                 arr.add(i);
             }
         }
+        System.out.println(arr);
         int i=0,ans=0;
         while(n!=1){
             if(n%arr.get(i)==0){
