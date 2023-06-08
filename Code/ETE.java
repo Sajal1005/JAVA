@@ -199,6 +199,8 @@ class ETE{
         ans+=Math.max(n1%10,Math.max(n2%10,n3%10));
         ans*=10;n1/=10;n2/=10;n3/=10;
         ans+=Math.min(n1%10,Math.min(n2%10,n3%10));
-        System.out.println(ans);
+        StringBuilder s = new StringBuilder(ans+"");
+
+        System.out.println(s.reverse);
     }
 }
