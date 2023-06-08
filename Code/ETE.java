@@ -305,12 +305,20 @@ class ETE{
 
         int n1=in.nextInt();
         int n2 = in.nextInt();
-        int ans=1;
-        for(int i=1;i<=Math.max(n1,n2);i++){
-            if(n1%i==0 && n2%i==0){
-                ans=i;
+//        int ans=1;
+//        for(int i=1;i<=Math.max(n1,n2);i++){
+//            if(n1%i==0 && n2%i==0){
+//                ans=i;
+//            }
+//        }
+//        System.out.println(ans);
+        int i=Math.max(n1,n2);
+        while(true){
+            if(i%n1==0 && i%n2==0){
+                System.out.println(i);
+                break;
             }
+            i++;
         }
-        System.out.println(ans);
     }
 }
