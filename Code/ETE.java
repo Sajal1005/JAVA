@@ -614,22 +614,10 @@ class ETE{
 //        System.out.println(max);
 
         int n = in.nextInt();
-        String arr[] = new String[n];
+        HashSet<String> s = new HashSet<>();
         for(int i=0;i<n;i++){
-            arr[i]=in.next();
+            s.add(in.next());
         }
-        int ans=0;
-        for(int i=0;i<n;i++){
-            int count=0;
-            for(int j=0;j<n;j++){
-                if(arr[i].equals(arr[j])){
-                    count++;
-                }
-            }
-            if(count==1){
-                ans++;
-            }
-        }
-        System.out.println(ans);
+        System.out.println(s.size());
     }
 }
