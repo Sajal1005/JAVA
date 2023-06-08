@@ -401,13 +401,19 @@ class ETE{
 //            ans/=10;
 //        }
 //        System.out.println(sum==n);
-        int ans=0;
-        while(n!=0){
-            if(n%2==1){
-                ans++;
-            }
-            n/=2;
+//        int ans=0;
+//        while(n!=0){
+//            if(n%2==1){
+//                ans++;
+//            }
+//            n/=2;
+//        }
+//        System.out.println(ans);
+
+        int arr[] = new int[5];
+        for(int i=0;i<5;i++){
+            arr[i]=in.nextInt();
         }
-        System.out.println(ans);
+        
     }
 }
