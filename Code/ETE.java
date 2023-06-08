@@ -697,7 +697,15 @@ class ETE{
         int m = in.nextInt();
         if(n>=j){
             n-=j;
-            System.out.println("John: tickets booked: ");
+            System.out.println("John: tickets booked: "+j);
+        }else{
+            System.out.println("John: not booked");
+        }
+        if(n>=m){
+            n-=m;
+            System.out.println("Mike: tickets booked: "+m);
+        }else{
+            System.out.println("John: not booked");
         }
     }
 }
