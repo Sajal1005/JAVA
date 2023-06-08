@@ -13,6 +13,9 @@ class ETE{
         return false;
     }
     public static boolean prime(int n){
+        if(n<2){
+            return false;
+        }
         for(int i=2;i<n;i++){
             if(n%i==0){
                 return false;
@@ -266,11 +269,19 @@ class ETE{
 //            }
 //        }
 //        System.out.println(and+" "+or+" "+xor);
+//        int n = in.nextInt();
+//        for(int i=1;i<=n;i++){
+//            if(prime(i)){
+//                System.out.print(i+" ");
+//            }
+//        }
+
         int n = in.nextInt();
-        for(int i=1;i<=n;i++){
-            if(prime(i)){
-                System.out.print(i+" ");
-            }
+        int count=0,ans=0;
+        while(n!=0){
+            ans+=(Math.pow(2,count++)*n%10);
+            n/=10;
         }
+        System.out.println(ans);
     }
 }
