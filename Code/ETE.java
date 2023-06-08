@@ -520,18 +520,9 @@ class ETE{
 //        }
 
         String s = in.next();
-        int n = in.nextInt();
-        int ans=0;
-        for(int i=0;i<n;i++){
-            char c = in.next().charAt(0);
-            int count=0;
-            for(int j=0;j<s.length();j++){
-                if(c==s.charAt(j)){
-                    count++;
-                }
-            }
-            ans+=(count*((int)c));
+        String str[] = s.split(" ");
+        for(int i=str.length-1;i>=0;i--){
+            System.out.print(str[i]+" ");
         }
-        System.out.println(ans);
     }
 }
