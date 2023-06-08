@@ -353,16 +353,22 @@ class ETE{
                 arr[i][j]=in.nextInt();
             }
         }
-        for(int i=0;i<n;i++){
-            int temp=arr[i][0];
-            arr[i][0]=arr[i][m-1];
-            arr[i][m-1]=temp;
-        }
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                System.out.print(arr[i][j]+" ");
+        int n2 = in.nextInt();
+        int m2 = in.nextInt();
+        int arr2[][] = new int[n2][m2];
+        for(int i=0;i<n2;i++){
+            for(int j=0;j<m2;j++){
+                arr[i][j]=in.nextInt();
             }
-            System.out.println();
+        }
+        int ans[][] = new int[n][m2];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m2;j++){
+                for(int k=0;k<m;k++){
+                    ans[i][j]+=arr[i][k]*arr2[k][j];
+                }
+                System.out.println(ans[i][j]);
+            }
         }
     }
 }
