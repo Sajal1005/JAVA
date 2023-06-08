@@ -482,10 +482,14 @@ class ETE{
 //        System.out.println(0);
 
         String s = in.nextLine();
-        String[] str = s.split(" ");
+        char[] str = s.toCharArray();
         for(int i=0;i<str.length;i++){
-            StringBuilder a = new StringBuilder(str[i]);
-            System.out.print(a.reverse()+" ");
+            if(str[i]>='A' && str[i]<='Z'){
+                str[i]+=32;
+            }else if(str[i]<='a' && str[i]>='z'){
+                str[i]-=32;
+            }
+            System.out.print(str[i]);
         }
     }
 }
