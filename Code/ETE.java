@@ -707,22 +707,36 @@ class ETE{
 //        }else{
 //            System.out.println("John: not booked");
 //        }
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//        for(int i=0;i<n;i++){
+//            String s = in.next();
+//            if(s.charAt(0)=='D'){
+//                int x = s.length()+1;
+//                for(int j=x;j>=1;j--){
+//                    System.out.print(j);
+//                }
+//            }else{
+//                int x = s.length()+1;
+//                for(int j=1;j<=x;j++){
+//                    System.out.print(j);
+//                }
+//            }
+//            System.out.println();
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+        int n=in.nextInt();
+        int count=1;
+        int arr[]=new int[n];
         for(int i=0;i<n;i++){
-            String s = in.next();
-            if(s.charAt(0)=='D'){
-                int x = s.length()+1;
-                for(int j=x;j>=1;j--){
-                    System.out.print(j);
-                }
+            arr[i]=in.nextInt();
+        }
+        for(int i=0;i<n-1;i++){
+            System.out.println(count);
+            if(arr[i+1]>arr[i]){
+                count++;
             }else{
-                int x = s.length()+1;
-                for(int j=1;j<=x;j++){
-                    System.out.print(j);
-                }
+                count=1;
             }
-            System.out.println();
         }
     }
 }
