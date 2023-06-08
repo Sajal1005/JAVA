@@ -290,6 +290,11 @@ class ETE{
             arr.add(n%2);
             n/=2;
         }
-        System.out.println(arr);
+        int ans=0;
+        for(int i=arr.size()-1;i>=0;i--){
+            ans*=10;
+            ans+=arr.get(i);
+        }
+        System.out.println(ans);
     }
 }
