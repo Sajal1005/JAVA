@@ -1,6 +1,14 @@
 import java.util.*;
 
 class ETE{
+    public static boolean cube(int n){
+        for(int i=1;i<n;i++){
+            if(i*i*i==n){
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
@@ -139,23 +147,34 @@ class ETE{
 //            }
 //        }
 
-        int ans=-1;
+//        int ans=-1;
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        for(int i=0;i<n;i++){
+//            int count=0;
+//            for(int j=0;j<n;j++){
+//                if(arr[i]==arr[j]){
+//                    count++;
+//                }
+//            }
+//            if(count==arr[i]){
+//                ans=Math.max(ans,count);
+//            }
+//        }
+//        System.out.println(ans);
+
         int n = in.nextInt();
         int arr[] = new int[n];
+        int count=0;
         for(int i=0;i<n;i++){
             arr[i]=in.nextInt();
-        }
-        for(int i=0;i<n;i++){
-            int count=0;
-            for(int j=0;j<n;j++){
-                if(arr[i]==arr[j]){
-                    count++;
-                }
-            }
-            if(count==arr[i]){
-                ans=Math.max(ans,count);
+            if(cube(arr[i])){
+                System.out.print(arr[i]+" ");
             }
         }
-        System.out.println(ans);
+
     }
 }
