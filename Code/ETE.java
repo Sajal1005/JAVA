@@ -519,10 +519,14 @@ class ETE{
 //            System.out.print(" ");
 //        }
 
-        String s = in.nextLine();
-        String str[] = s.split(" ");
-        for(int i=str.length-1;i>=0;i--){
-            System.out.print(str[i]+" ");
+        int[] arr = new int[5];
+        int ans=arr[0]-arr[1];
+        for(int i=0;i<5;i++){
+            arr[i]=in.nextInt();
         }
+        for(int i=2;i<5;i++){
+            ans-=arr[i];
+        }
+        System.out.println(ans);
     }
 }
