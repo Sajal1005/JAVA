@@ -64,18 +64,36 @@ class ETE{
 //            }
 //        }
 
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int min=arr[0];
+//        System.out.print(arr[0]+" ");
+//        for(int i=1;i<n;i++){
+//            if(arr[i]<min){
+//                System.out.print(arr[i]+" ");
+//                min=arr[i];
+//            }
+//        }
+
         int n = in.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
+        ArrayList<Integer> arr = new ArrayList<>();
+        while(n!=0){
+            arr.add(n%10);
+            n/=10;
         }
-        int min=arr[0];
-        System.out.print(arr[0]+" ");
-        for(int i=1;i<n;i++){
-            if(arr[i]<min){
-                System.out.print(arr[i]+" ");
-                min=arr[i];
-            }
+        Collections.sort(arr);
+        int ans1=0,ans2=0;
+        for(int i=0;i<arr.size();i++){
+            ans1*=10;
+            ans1+=arr.get(i);
         }
+        for(int i=arr.size()-1;i>=0;i--){
+            ans2*=10;
+            ans2+=arr.get(i);
+        }
+        System.out.println(ans1+ans2);
     }
 }
