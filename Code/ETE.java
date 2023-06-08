@@ -759,15 +759,28 @@ class ETE{
 //        System.out.println(count);
 
         Scanner in = new Scanner(System.in);
-//        int p=in.nextInt();
-//        for(int i=0;i<p;i++){
-//            int n = in.nextInt();
-//            int k= in.nextInt();
-//            int ans=0;
-//            while(ans^)
-//        }
+////        int p=in.nextInt();
+////        for(int i=0;i<p;i++){
+////            int n = in.nextInt();
+////            int k= in.nextInt();
+////            int ans=0;
+////            while(ans^)
+////        }
+//
+//        String s = "Sajal Nanda";
+//        System.out.println(s.indexOf("Nan"));
 
-        String s = "Sajal Nanda";
-        System.out.println(s.indexOf("Nan"));
+        Stack<Character> stack = new Stack<>();
+        String s = in.next();
+        for(int i=0;i<s.length();i++){
+            if(stack.empty()){
+                stack.push(s.charAt(i));
+            }else if(stack.peek()=='(' && s.charAt(i)==')'){
+                stack.pop();
+            }else{
+                stack.push(s.charAt(i));
+            }
+        }
+        System.out.println(stack.size());
     }
 }
