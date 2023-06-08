@@ -436,10 +436,10 @@ class ETE{
             arr[i]=in.nextInt();
         }
         int min =arr[0];
-        System.out.print(min+" ");
+        System.out.print(min);
         for(int i=1;i<n;i++){
             if(arr[i]<min){
-                System.out.print(arr[i]+" ");
+                System.out.print(arr[i]);
                 min=arr[i];
             }
         }
