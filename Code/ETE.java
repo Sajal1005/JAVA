@@ -464,11 +464,15 @@ class ETE{
 //            System.out.println();
 //        }
 
-        int t = in.nextInt();
-        while(t-->0){
-            int n = in.nextInt();
-            StringBuilder s = new StringBuilder(n+"");
-            System.out.println(s.reverse());
+        int n=in.nextInt();
+        ArrayList<Integer> arr = new ArrayList<>();
+        for(int i=0;i<n-1;i++){
+            arr.add(in.nextInt());
+        }
+        for(int i=1;i<=n;i++){
+            if(!arr.contains(i)){
+                System.out.println(i);
+            }
         }
     }
 }
