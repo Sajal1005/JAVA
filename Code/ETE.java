@@ -345,30 +345,32 @@ class ETE{
 //        }
 //        System.out.println(ans==sum);
 
-        int n = in.nextInt();
-        int m = in.nextInt();
-        int arr[][] = new int[n][m];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                arr[i][j]=in.nextInt();
-            }
-        }
-        int n2 = in.nextInt();
-        int m2 = in.nextInt();
-        int arr2[][] = new int[n2][m2];
-        for(int i=0;i<n2;i++){
-            for(int j=0;j<m2;j++){
-                arr2[i][j]=in.nextInt();
-            }
-        }
-        int ans[][] = new int[n][m2];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m2;j++){
-                for(int k=0;k<n2;k++){
-                    ans[i][j]+=(arr[i][k]*arr2[k][j]);
-                }
-                System.out.println(ans[i][j]);
-            }
-        }
+//        int n = in.nextInt();
+//        int m = in.nextInt();
+//        int arr[][] = new int[n][m];
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<m;j++){
+//                arr[i][j]=in.nextInt();
+//            }
+//        }
+//        int n2 = in.nextInt();
+//        int m2 = in.nextInt();
+//        int arr2[][] = new int[n2][m2];
+//        for(int i=0;i<n2;i++){
+//            for(int j=0;j<m2;j++){
+//                arr2[i][j]=in.nextInt();
+//            }
+//        }
+//        int ans[][] = new int[n][m2];
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<m2;j++){
+//                for(int k=0;k<n2;k++){
+//                    ans[i][j]+=(arr[i][k]*arr2[k][j]);
+//                }
+//                System.out.println(ans[i][j]);
+//            }
+//        }
+        int sum = 0; for (int i = 0, j = 0; i < 5 & j < 5; ++i, j = i + 1) sum += i;
+        System.out.println(sum);
     }
 }
