@@ -770,7 +770,12 @@ class ETE{
 //        String s = "Sajal Nanda";
 //        System.out.println(s.indexOf("Nan"));
 
-        String s = new String("5");
-        System.out.println(1 + 10 + s + 1 + 10);
+//        String s = new String("5");
+//        System.out.println(1 + 10 + s + 1 + 10);
+        String s = in.nextLine();
+        String str[] = s.split(" ");
+        for(int i=str.length-1;i>=0;i--){
+            System.out.print(str[i]+" ");
+        }
     }
 }
