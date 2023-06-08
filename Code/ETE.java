@@ -297,8 +297,10 @@ class ETE{
 //        }
 //        System.out.println(ans);
 
-        double c = in.nextDouble();
-        double ans = (double)(9.0/5.0*c)+32;
-        System.out.printf("%.2f",ans);
+//        double c = in.nextDouble();
+//        double ans = (double)(9.0/5.0*c)+32;
+//        System.out.printf("%.2f",ans);
+
+        
     }
 }
