@@ -579,7 +579,7 @@ class ETE{
 //        System.out.println(n);
 
         int n = in.nextInt();
-        in.next();
+        in.nextLine();
         String[] str = new String[n];
         for(int i=0;i<n;i++){
             str[i]=in.nextLine();
