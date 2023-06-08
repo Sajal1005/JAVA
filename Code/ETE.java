@@ -535,16 +535,21 @@ class ETE{
 //        int r = in.nextInt();
 //        System.out.println(2*r>=(Math.sqrt(w*w+h*h)));
 
-        String s = in.next();
-        for(int i=0;i<s.length();i++){
-            if(i%2==0){
-                System.out.print(s.charAt(i));
-            }
-        }
-        for(int i=0;i<s.length();i++){
-            if(i%2!=0){
-                System.out.print(s.charAt(i));
-            }
-        }
+//        String s = in.next();
+//        for(int i=0;i<s.length();i++){
+//            if(i%2==0){
+//                System.out.print(s.charAt(i));
+//            }
+//        }
+//        for(int i=0;i<s.length();i++){
+//            if(i%2!=0){
+//                System.out.print(s.charAt(i));
+//            }
+//        }
+
+        String s1=in.next();
+        String s2 = in.next();
+        String str1[] = s1.toCharArray();
+        
     }
 }
