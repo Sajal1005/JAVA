@@ -128,7 +128,15 @@ class ETE{
         int k = in.nextInt();
         int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            
+            arr[i] = in.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]+arr[j]==k){
+                    System.out.println(i+" "+j);
+                    System.exit(0);
+                }
+            }
         }
     }
 }
