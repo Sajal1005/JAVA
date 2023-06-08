@@ -481,7 +481,6 @@ class ETE{
 //        }
 //        System.out.println(0);
 
-        String s = in.nextLine();
 //        char[] str = s.toCharArray();
 //        for(int i=0;i<str.length;i++){
 //            if(str[i]>='A' && str[i]<='Z'){
@@ -491,20 +490,33 @@ class ETE{
 //            }
 //            System.out.print(str[i]);
 //        }
-        char c='%';
-        int ans=0;
-        for(int i=0;i<s.length();i++){
-            int count=0;
-            for(int j=0;j<s.length();j++){
-                if(s.charAt(i)==s.charAt(j)){
-                    count++;
-                }
-            }
-            if(count>ans && ){
-                c=s.charAt(i);
-                ans=count;
-            }
+//        char c='%';
+//        int ans=0;
+//        for(int i=0;i<s.length();i++){
+//            int count=0;
+//            for(int j=0;j<s.length();j++){
+//                if(s.charAt(i)==s.charAt(j)){
+//                    count++;
+//                }
+//            }
+//            if(count>ans && s.charAt(i)!=' '){
+//                c=s.charAt(i);
+//                ans=count;
+//            }
+//        }
+//        if(ans==0){
+//            System.out.print(0);
+//            System.exit(0);
+//        }
+//        System.out.print(ans+" "+c);
+
+        String s = in.nextLine();
+        String str[] = s.split(" ");
+        System.out.print(str.length+" ");
+        for(int i=0;i<str.length;i++){
+            System.out.print(str[i].charAt(0));
+            System.out.print((int)str[i].charAt(0));
+            System.out.print(" ");
         }
-        System.out.print(ans+" "+c);
     }
 }
