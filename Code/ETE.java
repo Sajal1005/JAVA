@@ -486,7 +486,7 @@ class ETE{
         for(int i=0;i<str.length;i++){
             if(str[i]>='A' && str[i]<='Z'){
                 str[i]+=32;
-            }else if(str[i]<='a' && str[i]>='z'){
+            }else if(str[i]>='a' && str[i]<='z'){
                 str[i]-=32;
             }
             System.out.print(str[i]);
