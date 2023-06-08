@@ -203,19 +203,26 @@ class ETE{
 //
 //        System.out.println(s.reverse());
 
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-        for(int i=0;i<10;i++){
-            int count=0;
-            for(int j=0;j<n;j++){
-                if(arr[j]==i){
-                    count++;
-                }
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        for(int i=0;i<10;i++){
+//            int count=0;
+//            for(int j=0;j<n;j++){
+//                if(arr[j]==i){
+//                    count++;
+//                }
+//            }
+//            System.out.print(count+" ");
+//        }
+        int n=in.nextInt();
+        for(int i=0;i<2*n-1;i++){
+            for(int j=0;j<2*n-1;j++){
+                System.out.print(Math.max(Math.max(i,j),Math.max(2*n-i-2,2*n-j-2)));
             }
-            System.out.print(count+" ");
+            System.out.println();
         }
     }
 }
