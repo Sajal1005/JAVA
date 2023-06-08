@@ -410,25 +410,30 @@ class ETE{
 //        }
 //        System.out.println(ans);
 
-        int arr[] = new int[5];
-        int min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
-        for(int i=0;i<5;i++){
-            arr[i]=in.nextInt();
-            min=Math.min(arr[i],min);
-            max=Math.max(arr[i],max);
-        }
-        System.out.println(max);
-        System.out.println(min);
-        int ans=arr[0]-arr[1];
-        for(int i=2;i<5;i++){
-            ans-=arr[i];
-        }
-        System.out.println(ans);
-        if(ans>=0){
-            System.out.println("Subtraction result is greater than or equal to Zero");
-        }else{
-            System.out.println("Subtraction result is less than Zero");
-        }
+//        int arr[] = new int[5];
+//        int min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
+//        for(int i=0;i<5;i++){
+//            arr[i]=in.nextInt();
+//            min=Math.min(arr[i],min);
+//            max=Math.max(arr[i],max);
+//        }
+//        System.out.println(max);
+//        System.out.println(min);
+//        int ans=arr[0]-arr[1];
+//        for(int i=2;i<5;i++){
+//            ans-=arr[i];
+//        }
+//        System.out.println(ans);
+//        if(ans>=0){
+//            System.out.println("Subtraction result is greater than or equal to Zero");
+//        }else{
+//            System.out.println("Subtraction result is less than Zero");
+//        }
 
+        int n = in.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            
+        }
     }
 }
