@@ -585,11 +585,11 @@ class ETE{
             if(c==s.charAt(i)){
                 count++;
             }else{
-                System.out.print(c+count);
+                System.out.print(c+""+count);
                 count=1;
                 c=s.charAt(i);
             }
         }
-        System.out.print(c+count);
+        System.out.print(c+""+count);
     }
 }
