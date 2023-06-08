@@ -578,6 +578,18 @@ class ETE{
 //        }
 //        System.out.println(n);
 
-        System.out.printf("%.2f",Math.PI*4.5*4.5);
+        String s = in.next();
+        char c = s.charAt(0);
+        int count=0;
+        for(int i=0;i<s.length();i++){
+            if(c==s.charAt(i)){
+                count++;
+            }else{
+                System.out.print(c+count);
+                count=1;
+                c=s.charAt(i);
+            }
+        }
+        System.out.print(c+count);
     }
 }
