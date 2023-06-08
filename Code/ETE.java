@@ -602,15 +602,31 @@ class ETE{
 //            }
 //        }
 //        System.out.print(c+""+count);
-        int max=0;
-        String s = in.next();
-        for(int i=0;i<s.length();i++){
-            for(int j=i+1;j<s.length();j++){
-                if(uniq(s.substring(i,j+1))){
-                    max=Math.max(max,j-i);
+//        int max=0;
+//        String s = in.next();
+//        for(int i=0;i<s.length();i++){
+//            for(int j=i+1;j<s.length();j++){
+//                if(uniq(s.substring(i,j+1))){
+//                    max=Math.max(max,j-i);
+//                }
+//            }
+//        }
+//        System.out.println(max);
+
+        int n = in.nextInt();
+        String arr[] = new String[n];
+        int ans=0;
+        for(int i=0;i<n;i++){
+            int count=0;
+            for(int j=0;j<n;j++){
+                if(arr[i].equals(arr[j])){
+                    count++;
                 }
             }
+            if(count==1){
+                ans++;
+            }
         }
-        System.out.println(max);
+        System.out.println(ans);
     }
 }
