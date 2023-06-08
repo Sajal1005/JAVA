@@ -464,6 +464,11 @@ class ETE{
 //            System.out.println();
 //        }
 
-        
+        int t = in.nextInt();
+        while(t-->0){
+            int n = in.nextInt();
+            StringBuilder s = new StringBuilder(n+"");
+            System.out.println(s.reverse());
+        }
     }
 }
