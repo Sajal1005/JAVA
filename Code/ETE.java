@@ -180,13 +180,13 @@ class ETE{
 //        }
 
         int n = in.nextInt();
-        int a=0,b=1,temp;
+        int a=0,b=1,temp,ans=0;
         for(int i=0;i<n;i++){
-            System.out.print(a+" ");
+            ans+=a;
             temp=b;
             b+=a;
             a=temp;
         }
-
+        System.out.println(ans);
     }
 }
