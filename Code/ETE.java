@@ -678,17 +678,26 @@ class ETE{
 //        System.out.print(c);
 //        System.out.print(count);
 
+//        Scanner in = new Scanner(System.in);
+//        String s = in.next();
+//        char[] ch = s.toCharArray();
+//        for(int i=0;i<ch.length;i++){
+//            if(ch[i]>='a' && ch[i]<='z'){
+//                ch[i]-=32;
+//            }else if(ch[i]>='A' && ch[i]<='Z'){
+//                ch[i]+=32;
+//            }
+//        }
+//        String ans = new String(ch);
+//        System.out.println(ans);
+
         Scanner in = new Scanner(System.in);
-        String s = in.next();
-        char[] ch = s.toCharArray();
-        for(int i=0;i<ch.length;i++){
-            if(ch[i]>='a' && ch[i]<='z'){
-                ch[i]-=32;
-            }else if(ch[i]>='A' && ch[i]<='Z'){
-                ch[i]+=32;
-            }
+        int n = in.nextInt();
+        int j=in.nextInt();
+        int m = in.nextInt();
+        if(n>=j){
+            n-=j;
+            System.out.println("John: tickets booked: ");
         }
-        String ans = new String(ch);
-        System.out.println(ans);
     }
 }
