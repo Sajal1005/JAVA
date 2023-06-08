@@ -469,14 +469,16 @@ class ETE{
         for(int i=0;i<n;i++){
             arr[i]=in.nextInt();
         }
-        int sum=0,ans=Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
-            if(sum<0){
-                sum=0;
+            for(int j=i+1;j<n;j++){
+                for(int k=j+1;k<n;k++){
+                    if(arr[i]+arr[j]+arr[k]==0){
+                        System.out.println(1);
+                        System.exit(0);
+                    }
+                }
             }
-            sum+=arr[i];
-            ans=Math.max(ans,sum);
         }
-        System.out.println(ans);
+        System.out.println(0);
     }
 }
