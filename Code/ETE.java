@@ -26,25 +26,42 @@ class ETE{
 //6
 //1 2 3 5 7 8
 //21 ans
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int ans=0;
+//        int flag=0;
+//        for(int i=0;i<n-1;i++){
+//            if(arr[i]+1==arr[i+1]){
+//                if(flag==0){
+//                    ans+=arr[i]+arr[i+1];
+//                    flag=1;
+//                }else{
+//                    ans+=arr[i+1];
+//                }
+//            }else{
+//                flag=0;
+//            }
+//        }
+//        System.out.println(ans);
+
+        ArrayList<Integer> arr = new ArrayList<Integer>();
         int n = in.nextInt();
-        int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
+            arr.add(in.nextInt());
         }
-        int ans=0;
-        int flag=0;
-        for(int i=0;i<n-1;i++){
-            if(arr[i]+1==arr[i+1]){
-                if(flag==0){
-                    ans+=arr[i]+arr[i+1];
-                    flag=1;
-                }else{
-                    ans+=arr[i+1];
-                }
-            }else{
-                flag=0;
+        n=in.nextInt();
+        for(int i=0;i<n;i++){
+            arr.add(in.nextInt());
+        }
+        Collections.sort(arr);
+        for(int i=0;i<arr.size();i++){
+            System.out.println(arr.get(i));
+            if(i!=arr.size()-1){
+                System.out.println(" ");
             }
         }
-        System.out.println(ans);
     }
 }
