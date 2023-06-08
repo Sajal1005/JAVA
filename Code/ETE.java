@@ -647,20 +647,6 @@ class ETE{
 //        }
 //        System.out.println(max);
 
-        int n = in.nextInt();
-        String[] arr = new String[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.next();
-        }
-        System.out.print("[");
-        String s = in.next();
-        for(int i=0;i<n;i++){
-            if(arr[i].length()<=s.length()){
-                arr[i]=" ";
-            }
-            if(arr[i]!=" "){
-                System.out.print(arr[i]+", ");
-            }
-        }
+        System.out.println("apple".startsWith("app"));
     }
 }
