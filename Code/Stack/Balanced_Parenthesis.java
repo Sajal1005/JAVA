@@ -1,2 +1,4 @@
-package Stack;public class Balanced_Parenthesis {
+package Stack;
+
+public class Balanced_Parenthesis {
 }
