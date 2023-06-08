@@ -464,6 +464,12 @@ class ETE{
 //            System.out.println();
 //        }
 
-        
+        int n = in.nextInt();
+        int sum=0;
+        for(int i=0;i<n;i++){
+            int x = in.nextInt();
+            sum+=x;
+            System.out.print(sum+" ");
+        }
     }
 }
