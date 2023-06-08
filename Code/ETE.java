@@ -571,6 +571,14 @@ class ETE{
 //        }
 
         int n = in.nextInt();
-        Has
+        HashMap<Integer,String> m = new HashMap<>();
+        for(int i=0;i<n;i++){
+            int x = in.nextInt();
+            String s = in.next();
+            m.put(x,s);
+        }
+        int x = in.nextInt();
+        m.get(x);
+
     }
 }
