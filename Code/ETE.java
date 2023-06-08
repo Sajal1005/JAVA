@@ -519,15 +519,20 @@ class ETE{
 //            System.out.print(" ");
 //        }
 
-        int[] arr = new int[5];
+//        int[] arr = new int[5];
+//
+//        for(int i=0;i<5;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int ans=arr[0]-arr[1];
+//        for(int i=2;i<5;i++){
+//            ans-=arr[i];
+//        }
+//        System.out.println(ans);
 
-        for(int i=0;i<5;i++){
-            arr[i]=in.nextInt();
-        }
-        int ans=arr[0]-arr[1];
-        for(int i=2;i<5;i++){
-            ans-=arr[i];
-        }
-        System.out.println(ans);
+        int w = in.nextInt();
+        int h = in.nextInt();
+        int r = in.nextInt();
+        System.out.println(w<=2*r && h<=2*r);
     }
 }
