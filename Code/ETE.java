@@ -571,16 +571,11 @@ class ETE{
 //        }
 
         int n = in.nextInt();
-        HashMap<Integer,String> m = new HashMap<>();
-        for(int i=0;i<n;i++){
-            int x = in.nextInt();
-            String s = in.next();
-            m.put(x,s);
+        if(n%10<5){
+            n-=(n%10);
+        }else{
+            n+=(10-n%10);
         }
-        int x = in.nextInt();
-        if(m.containsKey(x)){
-            System.out.println(m.get(x));
-        }
-
+        System.out.println(n);
     }
 }
