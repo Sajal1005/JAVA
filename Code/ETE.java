@@ -584,6 +584,7 @@ class ETE{
         for(int i=0;i<n;i++){
             str[i]=in.nextLine();
         }
+        Arrays.sort(str);
         System.out.println(Arrays.toString(str));
     }
 }
