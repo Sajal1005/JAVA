@@ -1,3 +1,5 @@
+import com.sun.security.jgss.GSSUtil;
+
 import java.util.*;
 
 class ETE{
@@ -301,6 +303,14 @@ class ETE{
 //        double ans = (double)(9.0/5.0*c)+32;
 //        System.out.printf("%.2f",ans);
 
-        
+        int n1=in.nextInt();
+        int n2 = in.nextInt();
+        int ans=1;
+        for(int i=1;i<=Math.max(n1,n2);i++){
+            if(n1%i==0 && n2%i==0){
+                ans=i;
+            }
+        }
+        System.out.println(ans);
     }
 }
