@@ -26,21 +26,18 @@ class ETE{
         return true;
     }
     public static boolean arm(int n){
-        int num=n,count=0;
+        int count=0,num=n;
         while(n!=0){
             count++;
             n/=10;
         }
-        int ans=0;
         n=num;
+        int ans=0;
         while(n!=0){
             ans+=(Math.pow(n%10,count));
             n/=10;
         }
-        if(ans==num){
-            return true;
-        }
-        return false;
+        return ans==num;
     }
     public static void main(String[] args){
 
@@ -385,5 +382,13 @@ class ETE{
 //            ans+=arr.get(i);
 //        }
 //        System.out.println(ans);
+
+        int n=in.nextInt();
+        int m = in.nextInt();
+        for(int i=n+1;i<m;i++){
+            if(arm(i)){
+                System.out.print(i+" ");
+            }
+        }
     }
 }
