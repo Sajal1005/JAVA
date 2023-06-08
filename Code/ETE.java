@@ -12,6 +12,23 @@ class ETE{
         }
         return false;
     }
+    public static boolean arm(int n){
+        int num=n,count=0;
+        while(n!=0){
+            count++;
+            n/=10;
+        }
+        int ans=0;
+        n=num;
+        while(n!=0){
+            ans+=(Math.pow(n%10,count));
+            n/=10;
+        }
+        if(ans==num){
+            return true;
+        }
+        return false;
+    }
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
@@ -224,22 +241,28 @@ class ETE{
 //            }
 //            System.out.println();
 //        }
+//        int n = in.nextInt();
+//        int k = in.nextInt();
+//        int and=0,or=0,xor=0;
+//        for(int i=1;i<=n;i++){
+//            for(int j=i+1;j<=n;j++){
+//                if((i&j)>and && (i&j)<k){
+//                    and=Math.max(and,i&j);
+//                }
+//                if((i|j)>or && (i|j)<k){
+//                    or=Math.max(or,i|j);
+//                }
+//                if((i^j)>xor && (i^j)<k){
+//                    xor=Math.max(xor,i^j);
+//                }
+//            }
+//        }
+//        System.out.println(and+" "+or+" "+xor);
         int n = in.nextInt();
-        int k = in.nextInt();
-        int and=0,or=0,xor=0;
         for(int i=1;i<=n;i++){
-            for(int j=i+1;j<=n;j++){
-                if((i&j)>and && (i&j)<k){
-                    and=Math.max(and,i&j);
-                }
-                if((i|j)>or && (i|j)<k){
-                    or=Math.max(or,i|j);
-                }
-                if((i^j)>xor && (i^j)<k){
-                    xor=Math.max(xor,i^j);
-                }
+            if(arm(i)){
+                System.out.print(i+" ");
             }
         }
-        System.out.println(and+" "+or+" "+xor);
     }
 }
