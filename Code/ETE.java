@@ -547,27 +547,30 @@ class ETE{
 //            }
 //        }
 
-        String s1=in.next();
-        String s2 = in.next();
-        char str1[] = s1.toCharArray();
-        char str2[] = s2.toCharArray();
-        Arrays.sort(str1);
-        Arrays.sort(str2);
-        if(str1.length!=str2.length){
-            System.out.println(false);
-            System.exit(0);
-        }
-        int flag=1;
-        for(int i=0;i<str1.length;i++){
-            if(str1[i]!=str2[i]){
-                flag=0;
-                break;
-            }
-        }
-        if(flag==0){
-            System.out.println(false);
-        }else{
-            System.out.println(true);
-        }
+//        String s1=in.next();
+//        String s2 = in.next();
+//        char str1[] = s1.toCharArray();
+//        char str2[] = s2.toCharArray();
+//        Arrays.sort(str1);
+//        Arrays.sort(str2);
+//        if(str1.length!=str2.length){
+//            System.out.println(false);
+//            System.exit(0);
+//        }
+//        int flag=1;
+//        for(int i=0;i<str1.length;i++){
+//            if(str1[i]!=str2[i]){
+//                flag=0;
+//                break;
+//            }
+//        }
+//        if(flag==0){
+//            System.out.println(false);
+//        }else{
+//            System.out.println(true);
+//        }
+
+        int n = in.nextInt();
+        
     }
 }
