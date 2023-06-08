@@ -510,13 +510,28 @@ class ETE{
 //        }
 //        System.out.print(ans+" "+c);
 
-        String s = in.nextLine();
-        String str[] = s.split(" ");
-        System.out.print(str.length+" ");
-        for(int i=0;i<str.length;i++){
-            System.out.print(str[i].charAt(0));
-            System.out.print((int)str[i].charAt(0));
-            System.out.print(" ");
+//        String s = in.nextLine();
+//        String str[] = s.split(" ");
+//        System.out.print(str.length+" ");
+//        for(int i=0;i<str.length;i++){
+//            System.out.print(str[i].charAt(0));
+//            System.out.print((int)str[i].charAt(0));
+//            System.out.print(" ");
+//        }
+
+        String s = in.next();
+        int n = in.nextInt();
+        int ans=0;
+        for(int i=0;i<n;i++){
+            char c = in.next().charAt(0);
+            int count=0;
+            for(int j=0;j<s.length();j++){
+                if(c==s.charAt(j)){
+                    count++;
+                }
+            }
+            ans+=(count*((int)c));
         }
+        System.out.println(ans);
     }
 }
