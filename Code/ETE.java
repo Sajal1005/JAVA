@@ -424,7 +424,9 @@ class ETE{
             ans-=arr[i];
         }
         System.out.println(ans);
-        
+        if(ans>0){
+            System.out.println("Subtraction result is greater than or equal to Zero");
+        }
 
     }
 }
