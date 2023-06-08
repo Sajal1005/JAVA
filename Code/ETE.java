@@ -482,14 +482,29 @@ class ETE{
 //        System.out.println(0);
 
         String s = in.nextLine();
-        char[] str = s.toCharArray();
-        for(int i=0;i<str.length;i++){
-            if(str[i]>='A' && str[i]<='Z'){
-                str[i]+=32;
-            }else if(str[i]>='a' && str[i]<='z'){
-                str[i]-=32;
+//        char[] str = s.toCharArray();
+//        for(int i=0;i<str.length;i++){
+//            if(str[i]>='A' && str[i]<='Z'){
+//                str[i]+=32;
+//            }else if(str[i]>='a' && str[i]<='z'){
+//                str[i]-=32;
+//            }
+//            System.out.print(str[i]);
+//        }
+        char c='%';
+        int ans=0;
+        for(int i=0;i<s.length();i++){
+            int count=0;
+            for(int j=0;j<s.length();j++){
+                if(s.charAt(i)==s.charAt(j)){
+                    count++;
+                }
             }
-            System.out.print(str[i]);
+            if(count>ans){
+                c=s.charAt(i);
+                ans=count;
+            }
         }
+        System.out.print(ans+" "+c);
     }
 }
