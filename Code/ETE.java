@@ -661,21 +661,34 @@ class ETE{
 //        }
 //        System.out.println(arr);
 
+//        Scanner in = new Scanner(System.in);
+//        String s = in.next();
+//        char c = s.charAt(0);
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)==c){
+//                count++;
+//            }else{
+//                System.out.print(c);
+//                System.out.print(count);
+//                c=s.charAt(i);
+//                count=1;
+//            }
+//        }
+//        System.out.print(c);
+//        System.out.print(count);
+
         Scanner in = new Scanner(System.in);
         String s = in.next();
-        char c = s.charAt(0);
-        int count=0;
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)==c){
-                count++;
-            }else{
-                System.out.print(c);
-                System.out.print(count);
-                c=s.charAt(i);
-                count=1;
+        char[] ch = s.toCharArray();
+        for(int i=0;i<ch.length;i++){
+            if(ch[i]>='a' && ch[i]<='z'){
+                ch[i]-=32;
+            }else if(ch[i]>='A' && ch[i]<='Z'){
+                ch[i]+=32;
             }
         }
-        System.out.print(c);
-        System.out.print(count);
+        String ans = new String(ch);
+        System.out.println(ans);
     }
 }
