@@ -47,20 +47,34 @@ class ETE{
 //        }
 //        System.out.println(ans);
 
-        ArrayList<Integer> arr = new ArrayList<Integer>();
+//        ArrayList<Integer> arr = new ArrayList<Integer>();
+//        int n = in.nextInt();
+//        for(int i=0;i<n;i++){
+//            arr.add(in.nextInt());
+//        }
+//        n=in.nextInt();
+//        for(int i=0;i<n;i++){
+//            arr.add(in.nextInt());
+//        }
+//        Collections.sort(arr);
+//        for(int i=0;i<arr.size();i++){
+//            System.out.print(arr.get(i));
+//            if(i!=arr.size()-1){
+//                System.out.print(" ");
+//            }
+//        }
+
         int n = in.nextInt();
+        int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr.add(in.nextInt());
+            arr[i]=in.nextInt();
         }
-        n=in.nextInt();
-        for(int i=0;i<n;i++){
-            arr.add(in.nextInt());
-        }
-        Collections.sort(arr);
-        for(int i=0;i<arr.size();i++){
-            System.out.print(arr.get(i));
-            if(i!=arr.size()-1){
-                System.out.print(" ");
+        int min=arr[0];
+        System.out.print(arr[0]+" ");
+        for(int i=1;i<n;i++){
+            if(arr[i]<min){
+                System.out.print(arr[i]+" ");
+                min=arr[i];
             }
         }
     }
