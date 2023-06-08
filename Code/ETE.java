@@ -570,12 +570,20 @@ class ETE{
 //            System.out.println(true);
 //        }
 
+//        int n = in.nextInt();
+//        if(n%10<5){
+//            n-=(n%10);
+//        }else{
+//            n+=(10-n%10);
+//        }
+//        System.out.println(n);
+
         int n = in.nextInt();
-        if(n%10<5){
-            n-=(n%10);
-        }else{
-            n+=(10-n%10);
+        in.next();
+        String[] str = new String[n];
+        for(int i=0;i<n;i++){
+            str[i]=in.nextLine();
         }
-        System.out.println(n);
+        System.out.println(Arrays.toString(str));
     }
 }
