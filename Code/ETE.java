@@ -44,13 +44,13 @@ class ETE{
         return true;
     }
     public static boolean arm(int n){
-        int count=0,num=n;
+        int num=n;
+        int count=0,ans=0;
         while(n!=0){
             count++;
             n/=10;
         }
         n=num;
-        int ans=0;
         while(n!=0){
             ans+=(Math.pow(n%10,count));
             n/=10;
@@ -778,12 +778,20 @@ class ETE{
 //            System.out.print(str[i]+" ");
 //        }
 
-        int n = in.nextInt();
-        ArrayList<Integer> arr = new ArrayList<>();
-        while(n!=0){
-            arr.add(n%2);
-            n/=2;
-        }
-        System.out.println(arr);
+//        int n = in.nextInt();
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        while(n!=0){
+//            arr.add(n%2);
+//            n/=2;
+//        }
+//        System.out.println(arr);
+        int n1=in.nextInt();
+        int n2 = in.nextInt();
+            for(int i=n1+1;i<n2;i++){
+                if(arm(i)){
+                    System.out.print(i+" ");
+                }
+            }
+        
     }
 }
