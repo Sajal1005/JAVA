@@ -770,17 +770,7 @@ class ETE{
 //        String s = "Sajal Nanda";
 //        System.out.println(s.indexOf("Nan"));
 
-        Stack<Character> stack = new Stack<>();
-        String s = in.next();
-        for(int i=0;i<s.length();i++){
-            if(stack.empty()){
-                stack.push(s.charAt(i));
-            }else if(stack.peek()=='(' && s.charAt(i)==')'){
-                stack.pop();
-            }else{
-                stack.push(s.charAt(i));
-            }
-        }
-        System.out.println(stack.size());
+        String s = new String("5");
+        System.out.println(1 + 10 + s + 1 + 10);
     }
 }
