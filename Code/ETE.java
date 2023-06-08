@@ -602,11 +602,13 @@ class ETE{
 //            }
 //        }
 //        System.out.print(c+""+count);
-
+        int max
         String s = in.next();
         for(int i=0;i<s.length();i++){
             for(int j=i+1;j<s.length();j++){
+                if(uniq(s.substring(i,j+1))){
 
+                }
             }
         }
     }
