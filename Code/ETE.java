@@ -12,6 +12,14 @@ class ETE{
         }
         return false;
     }
+    public static boolean prime(int n){
+        for(int i=2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
     public static boolean arm(int n){
         int num=n,count=0;
         while(n!=0){
@@ -260,7 +268,7 @@ class ETE{
 //        System.out.println(and+" "+or+" "+xor);
         int n = in.nextInt();
         for(int i=1;i<=n;i++){
-            if(arm(i)){
+            if(prime(i)){
                 System.out.print(i+" ");
             }
         }
