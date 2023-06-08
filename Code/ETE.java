@@ -578,7 +578,9 @@ class ETE{
             m.put(x,s);
         }
         int x = in.nextInt();
-        System.out.println(m.get(x));
+        if(m.containsKey(x)){
+            System.out.println(m.get(x));
+        }
 
     }
 }
