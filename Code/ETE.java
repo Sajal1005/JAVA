@@ -220,7 +220,7 @@ class ETE{
         int n=in.nextInt();
         for(int i=0;i<2*n-1;i++){
             for(int j=0;j<2*n-1;j++){
-                System.out.print(Math.max(Math.max(i,j),Math.max(2*n-i-2,2*n-j-2)));
+                System.out.print(n-Math.min(Math.min(i,j),Math.min(2*n-i-2,2*n-j-2)));
             }
             System.out.println();
         }
