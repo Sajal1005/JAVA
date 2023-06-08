@@ -767,33 +767,7 @@ class ETE{
 //            while(ans^)
 //        }
 
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-
-        for(int i=0;i<n;i++){
-            int flag=0;
-            for(int j=i+1;j<n;j++){
-                if(arr[j]>arr[i]){
-                    System.out.print(arr[j]+" ");
-                    flag=1;
-                    break;
-                }
-            }
-            if(flag==0){
-                for(int j=0;j<i;j++){
-                    if(arr[j]>arr[i]){
-                        System.out.print(arr[j]+" ");
-                        flag=1;
-                        break;
-                    }
-                }
-            }
-            if(flag==0){
-                System.out.print(-1+" ");
-            }
-        }
+        String s = "Sajal Nanda";
+        System.out.println(s.indexOf("Nan"));
     }
 }
