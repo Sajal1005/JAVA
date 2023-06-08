@@ -52,7 +52,7 @@ class ETE{
     }
     public static void main(String[] args){
 
-        Scanner in = new Scanner(System.in);
+//        Scanner in = new Scanner(System.in);
 //        int ans=0;
 //        int n = in.nextInt();
 //        int[] arr = new int[n];
@@ -647,18 +647,35 @@ class ETE{
 //        }
 //        System.out.println(max);
 
-        int n = in.nextInt();
-        ArrayList<String> arr = new ArrayList<>();
-        HashSet<String> set = new HashSet<>();
-        for(int i=0;i<n;i++){
-            String s = in.next();
-            if(set.contains(s)){
-                continue;
+//        int n = in.nextInt();
+//        ArrayList<String> arr = new ArrayList<>();
+//        HashSet<String> set = new HashSet<>();
+//        for(int i=0;i<n;i++){
+//            String s = in.next();
+//            if(set.contains(s)){
+//                continue;
+//            }else{
+//                set.add(s);
+//                arr.add(s);
+//            }
+//        }
+//        System.out.println(arr);
+
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        char c = s.charAt(0);
+        int count=0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==c){
+                count++;
             }else{
-                set.add(s);
-                arr.add(s);
+                System.out.print(c);
+                System.out.print(count);
+                c=s.charAt(i);
+                count=1;
             }
         }
-        System.out.println(arr);
+        System.out.print(c);
+        System.out.print(count);
     }
 }
