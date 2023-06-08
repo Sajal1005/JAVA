@@ -370,6 +370,20 @@ class ETE{
 //                System.out.println(ans[i][j]);
 //            }
 //        }
-        int a = 2, b = 2, c = 3; if (--a == b && --b == c ); else if (a == b & --b == c); System.out.print(a + " " + b + " " + c);
+//        int a = 2, b = 2, c = 3; if (--a == b && --b == c ); else if (a == b & --b == c); System.out.print(a + " " + b + " " + c);
+
+
+//        int n = in.nextInt();
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        while(n!=0){
+//            arr.add(n%2);
+//            n/=2;
+//        }
+//        int ans=0;
+//        for(int i=arr.size()-1;i>=0;i--){
+//            ans*=10;
+//            ans+=arr.get(i);
+//        }
+//        System.out.println(ans);
     }
 }
