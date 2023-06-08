@@ -320,29 +320,41 @@ class ETE{
 //            }
 //            i++;
 //        }
+//        int n = in.nextInt();
+//        int num=n,sum=0;
+//        while(n!=0){
+//            sum+=n%10;
+//            n/=10;
+//        }
+//        n=num;
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        for(int i=2;i<n;i++){
+//            if(n%i==0 && prime(i)){
+//                arr.add(i);
+//            }
+//        }
+//        System.out.println(arr);
+//        int i=0,ans=0;
+//        while(n!=1){
+//            if(n%arr.get(i)==0){
+//                n/=arr.get(i);
+//                ans+=arr.get(i);
+//            }else{
+//                i++;
+//            }
+//        }
+//        System.out.println(ans==sum);
+
         int n = in.nextInt();
-        int num=n,sum=0;
-        while(n!=0){
-            sum+=n%10;
-            n/=10;
-        }
-        n=num;
-        ArrayList<Integer> arr = new ArrayList<>();
-        for(int i=2;i<n;i++){
-            if(n%i==0 && prime(i)){
-                arr.add(i);
+        int m = in.nextInt();
+        int arr[][] = new int[n][m];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                arr[i][j]=in.nextInt();
+                if(i<j){
+                    System.out.print(arr[i][j]+" ");
+                }
             }
         }
-        System.out.println(arr);
-        int i=0,ans=0;
-        while(n!=1){
-            if(n%arr.get(i)==0){
-                n/=arr.get(i);
-                ans+=arr.get(i);
-            }else{
-                i++;
-            }
-        }
-        System.out.println(ans==sum);
     }
 }
