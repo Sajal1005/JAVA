@@ -578,7 +578,7 @@ class ETE{
             m.put(x,s);
         }
         int x = in.nextInt();
-        m.get(x);
+        System.out.println(m.get(x));
 
     }
 }
