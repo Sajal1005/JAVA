@@ -491,7 +491,7 @@ class ETE{
 //            }
 //            System.out.print(str[i]);
 //        }
-        char c='@';
+        char c='%';
         int ans=0;
         for(int i=0;i<s.length();i++){
             int count=0;
