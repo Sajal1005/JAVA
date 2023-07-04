@@ -44,20 +44,20 @@ class ETE{
         return true;
     }
     public static boolean arm(int n){
-        int num=n;
-        int count=0,ans=0;
+        int count=0,num=n;
         while(n!=0){
             count++;
             n/=10;
         }
         n=num;
+        int ans=0;
         while(n!=0){
             ans+=(Math.pow(n%10,count));
             n/=10;
         }
-        return ans==num;
+        return num==ans;
     }
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 //        Scanner in = new Scanner(System.in);
 //        int ans=0;
@@ -794,7 +794,6 @@ class ETE{
 //            }
 
 
-        int n = in.nextInt();
 //        for(int i=0;i<n;i++){
 //            for(int j=0;j<n-i-1;j++){
 //                System.out.print(".");
@@ -812,18 +811,301 @@ class ETE{
 //            }
 //            System.out.println();
 //        }
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
-        }
-        int ans=Integer.MIN_VALUE,sum=0;
-        for(int i=0;i<n;i++){
-            if(sum<0){
-                sum=0;
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int ans=Integer.MIN_VALUE,sum=0;
+//        for(int i=0;i<n;i++){
+//            if(sum<0){
+//                sum=0;
+//            }
+//            sum+=arr[i];
+//            ans=Math.max(sum,ans);
+//        }
+//        System.out.println(sum);
+
+//        String s = in.nextLine();
+//        s=s.toLowerCase();
+//        String str[] = s.split(" ");
+//        for(int i=0;i<str.length;i++){
+//            StringBuffer q = new StringBuffer(str[i]);
+//            q.setCharAt(0,(char)(q.charAt(0)-32));
+//            System.out.print(q+" ");
+//        }
+
+//        String s = in.next();
+//        int ans=0;
+//        char c='%';
+//        for(int i=0;i<s.length();i++){
+//            int count=0;
+//            for(int j=0;j<s.length();j++){
+//                if(s.charAt(i)==s.charAt(j)){
+//                    count++;
+//                }
+//            }
+//            if(count>ans){
+//                ans=count;
+//                c=s.charAt(i);
+//            }
+//        }
+//        System.out.println(c);
+//        String s = in.next();
+//        int i=0,j=1;
+//        while(i<s.length() && j<s.length()){
+//            if(s.charAt(i)>s.charAt(j)){
+//                System.out.print(s.charAt(i));
+//            }else{
+//                System.out.print(s.charAt(j));
+//            }
+//            i+=2;
+//            j+=2;
+//        }
+//        if(s.length()%2!=0){
+//            System.out.print(s.charAt(s.length()-1));
+//        }
+
+//        String s = in.next();
+//        int sum=0;
+//        for(int i=0;i<s.length();i++){
+//            if(s.charAt(i)>='0' && s.charAt(i)<='9'){
+//                int k=i;
+//                while(i<s.length() && (s.charAt(i)>='0' && s.charAt(i)<='9')){
+//                    i++;
+//                }
+//                sum+=(Integer.parseInt(s.substring(k,i)+""));
+//            }
+//        }
+//        System.out.println(sum);
+
+//        String s = in.nextLine();
+//        String str[] = s.split(" ");
+//        for(int i=0;i<str.length;i++){
+//            StringBuffer buff = new StringBuffer(str[i]);
+//            System.out.print(buff.reverse()+" ");
+//        }
+
+//        String s = in.next();
+//        int max=0;
+//        for(int i=0;i<s.length();i++){
+//            for(int j=i;j<s.length();j++){
+//                if(uniq(s.substring(i,j+1))){
+//                    max=Math.max(max,j+1-i);
+//                }
+//            }
+//        }
+//        System.out.println(max);
+
+//        int n = in.nextInt();
+//        int k = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int i=0,j=k-1;
+//        while(i<n && j<n){
+//            for(int q=j;q>=i;q--){
+//                System.out.print(arr[q]+" ");
+//            }
+//            i+=k;j+=k;
+//        }
+//        for(int q=n-1;q>=i;q--){
+//            System.out.print(arr[q]+" ");
+//        }
+//    }
+
+//        String s = in.nextLine();
+//        int count=0;
+//        for(int i=0;i<s.length();i++){
+//            char c = s.charAt(i);
+//            if(c=='i' || c=='e' || c=='o' || c=='a' || c=='u' || c=='A' || c=='E' || c=='I' || c=='O' || c=='U'){
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
+//        }
+
+//        String s1 = in.next();
+//        String s2 = in.next();
+//        char[] c1 = s1.toCharArray();
+//        char[] c2 = s2.toCharArray();
+//        Arrays.sort(c1);
+//        Arrays.sort(c2);
+//        String q1 = new String(c1);
+//        String q2 = new String(c2);
+//        System.out.println(q1.equals(q2));
+
+//        int runs=in.nextInt();
+//        int overs = in.nextInt();
+//        if(overs==0){
+//            System.out.print("java.lang.ArithmeticException");
+//            System.exit(0);
+//        }
+//        float ans = runs/overs;
+//
+//        System.out.printf("%.2f",ans);
+
+//        int n =in.nextInt();
+//        if(n==1){
+//            double l = in.nextDouble();
+//            double w = in.nextDouble();
+//            System.out.printf("Area: %.2f\n",(l*w));
+//            System.out.printf("Perimeter: %.2f",(2*(l+w)));
+//        }else if(n==2){
+//            double r = in.nextDouble();
+//            System.out.printf("Area: %.2f\n",(Math.PI*r*r));
+//            System.out.printf("Circumference: %.2f",(Math.PI*2*r));
+//        }
+
+//        String s = in.next();
+//        System.out.println(s.trim());
+
+//        int n = in.nextInt();
+//        String[] arr = new String[n];
+//        in.nextLine();
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextLine();
+//        }
+//        Arrays.sort(arr);
+//        System.out.println(Arrays.toString(arr));
+
+//        int n = in.nextInt();
+//        if(n%10<5){
+//            n-=(n%10);
+//        }else{
+//            n+=(10-n%10);
+//        }
+//        System.out.println(n);
+
+//        String s = in.next();
+//        int n = in.nextInt();
+//        int sum=0;
+//        for(int i=0;i<n;i++){
+//            char c= in.next().charAt(0);
+//            int count=0;
+//            for(int j=0;j<s.length();j++){
+//                if(c==s.charAt(i)){
+//                    count++;
+//                }
+//
+//            }
+//            sum+=(count*((int)c));
+//        }
+//        System.out.println(sum);
+
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        String arr2[] = new String[n];
+//        for(int i=0;i<n;i++){
+//            int x = in.nextInt();
+//            String s = in.next();
+//            arr[i]=x;
+//            arr2[i]=s;
+//        }
+//        int x = in.nextInt();
+
+//        String s = in.next();
+//        int id = in.nextInt();
+//        if(id<=0){
+//            System.out.println("Invalid ID");
+//            System.exit(0);
+//        }
+//        int sal = in.nextInt();
+//        if(sal<0){
+//            System.out.println("Invalid Salary");
+//            System.exit(0);
+//        }
+//        System.out.println("Data Processed");
+
+//        int bal = in.nextInt();println("Withdrawal Unsuccessful");
+//        }else{
+//            System.out.printf("Withdrawal Successful. Available balance: %.1f",(float)bal-need);
+//        }
+
+//        String s = in.nextLine();
+//        char[] ch = s.toCharArray();
+//        for(int i=0;i<ch.length;i++){
+//            if(ch[i]>='A' && ch[i]<='Z'){
+//                ch[i]+=32;
+//            }else if(ch[i]>='a' && ch[i]<='z'){
+//                ch[i]-=
+
+//        String s = in.nextLine();
+//        String str[] = s.split(" ");
+//        System.out.print(str.length+" ");
+//        for(int i=0;i<str.length;i++){
+//            System.out.print(str[i].charAt(0));
+//            System.out.print((int)str[i].charAt(0)+" ");
+//        }
+
+//        String s = in.nextLine();
+//        char c='%';
+//        int ans=0;
+//        for(int i=0;i<s.length();i++){
+//            int count=0;
+//            for(int j=0;j<s.length();j++){
+//                if(s.charAt(i)==s.charAt(j)){
+//                    count++;
+//                }
+//            }
+//            if(count>ans && s.charAt(i)!=' '){
+//                ans=count;
+//                c=s.charAt(i);
+//            }
+//        }
+//        System.out.println(ans+" "+c);
+
+//        int n=in.nextInt();
+//        int k = in.nextInt();
+//        int arr[] = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//        }
+//        int i=0,j=k-1;
+//        while(i<n && j<n){
+//            for(int q=j;q>=i;q--){
+//                System.out.print(arr[q]+" ");
+//            }
+//            i+=k;
+//            j+=k;
+//        }
+//        for(int q=n-1;q>=i;q--){
+//            System.out.print(arr[q]+" ");
+//        }
+
+//        int n = in.nextInt();
+//        int arr[] = new int[n];
+//        int sum=0,ans=0;
+//        for(int i=0;i<n;i++){
+//            arr[i]=in.nextInt();
+//            if(sum<0){
+//                sum=0;
+//            }
+//            sum+=arr[i];
+//            ans = Math.max(ans,sum);
+//        }
+//        System.out.println(ans);
+
+        Stack<Integer> stack = new Stack<>();
+        String s = in.next();
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)>='0' && s.charAt(i)<='9'){
+                stack.push(Integer.parseInt(s.charAt(i)+""));
+            }else{
+                int op1=stack.pop();
+                int op2=stack.pop();
+                if(s.charAt(i)=='+'){
+                    stack.push(op2+op1);
+                }else if(s.charAt(i)=='-'){
+                    stack.push(op2-op1);
+                }else if(s.charAt(i)=='*'){
+                    stack.push(op2*op1);
+                }else{
+                    stack.push(op2/op1);
+                }
             }
-            sum+=arr[i];
-            ans=Math.max(sum,ans);
         }
-        System.out.println(sum);
+        System.out.println(stack.pop());
+
     }
 }
