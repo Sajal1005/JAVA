@@ -2,25 +2,37 @@ package BinarySearch;
 import java.util.*;
 
 public class binarySearch {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int t = in.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=in.nextInt();
+
+//    RECURSIVE
+    public int bs(int[] arr, int target,int low,int high){
+        if(low>high){
+            return -1;
         }
-        int l=0,h=n-1;
-        while(l<=h){
-            int m = l+((h-l)/2);
-            if(arr[m]==t){
-                System.out.println(m);
-                break;
-            }else if(t>arr[m]){
-                l=m+1;
+        int mid=(low)+(high-low)/2;
+        if(arr[mid]==target){
+            return mid;
+        }else if(target>arr[mid]){
+            return bs(arr,target,mid+1,high);
+        }
+        return bs(arr,target,low,mid-1);
+    }
+    public int search(int[] arr, int target) {
+        return bs(arr,target,0,arr.length-1);
+    }
+
+//    ITERATIVE
+    public int search2(int[] arr, int target) {
+        int low=0,high=arr.length-1;
+        while(low<=high){
+            int mid=(low)+(high-low)/2;
+            if(arr[mid]==target){
+                return mid;
+            }else if(target>arr[mid]){
+                low=mid+1;
             }else{
-                h=m-1;
+                high=mid-1;
             }
         }
+        return -1;
     }
 }
