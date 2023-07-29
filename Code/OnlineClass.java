@@ -4,21 +4,28 @@ public class OnlineClass {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        char arr[] = new char[n];
+        int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr[i] = in.next().charAt(0);
+            arr[i]=in.nextInt();
         }
-        int m = in.nextInt();
-        int mat[][] = new int[m][n];
-        for(int i=0;i<m;i++){
-            int count=0;
-            for(int j=0;j<n;j++){
-                char c = in.next().charAt(0);
-                if(c==arr[j]){
-                    count++;
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                int flag=0,flag2=0;
+                for(int k=i;k<j;k++){
+                    if(arr[k]>arr[k+1]){
+                        if(flag==0) {
+                            flag = 1;
+                            flag2=1;
+                        }else{
+                            flag2=0;
+                            break;
+                        }
+                    }
+                }
+                if(flag2==1 || flag==0){
+                    System.out.println(i+" "+j);
                 }
             }
-            System.out.println("Student "+i+"'s correct count is "+count);
         }
     }
 }
